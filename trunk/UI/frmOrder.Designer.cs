@@ -42,7 +42,6 @@
             this.dtOrderDate = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpCust = new System.Windows.Forms.TabPage();
-            this.ucCustomerInfo1 = new QuickBooks.UI.ucCustomerInfo();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbWireTransfer = new System.Windows.Forms.RadioButton();
             this.rbPaypal = new System.Windows.Forms.RadioButton();
@@ -56,19 +55,14 @@
             this.txtRow3 = new System.Windows.Forms.TextBox();
             this.tcCreditCards = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.ucCC1 = new QuickBooks.UI.ucCreditCard();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.ucCC2 = new QuickBooks.UI.ucCreditCard();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.ucCC3 = new QuickBooks.UI.ucCreditCard();
             this.txtRow2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtRow1 = new System.Windows.Forms.TextBox();
-            this.ucShippingAddress = new QuickBooks.UI.ucAddress();
             this.txtTrim = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
-            this.ucBillingAddress = new QuickBooks.UI.ucAddress();
             this.label13 = new System.Windows.Forms.Label();
             this.txtMake = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -100,6 +94,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.ucCustomerInfo1 = new QuickBooks.UI.ucCustomerInfo();
+            this.ucCC1 = new QuickBooks.UI.ucCreditCard();
+            this.ucCC2 = new QuickBooks.UI.ucCreditCard();
+            this.ucCC3 = new QuickBooks.UI.ucCreditCard();
+            this.ucShippingAddress = new QuickBooks.UI.ucAddress();
+            this.ucBillingAddress = new QuickBooks.UI.ucAddress();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCust.SuspendLayout();
@@ -198,6 +200,8 @@
             // 
             // tpCust
             // 
+            this.tpCust.Controls.Add(this.label3);
+            this.tpCust.Controls.Add(this.txtNotes);
             this.tpCust.Controls.Add(this.ucCustomerInfo1);
             this.tpCust.Controls.Add(this.groupBox2);
             this.tpCust.Controls.Add(this.txtYear);
@@ -228,12 +232,6 @@
             resources.ApplyResources(this.tpCust, "tpCust");
             this.tpCust.Name = "tpCust";
             this.tpCust.UseVisualStyleBackColor = true;
-            // 
-            // ucCustomerInfo1
-            // 
-            this.ucCustomerInfo1.FullName = "";
-            resources.ApplyResources(this.ucCustomerInfo1, "ucCustomerInfo1");
-            this.ucCustomerInfo1.Name = "ucCustomerInfo1";
             // 
             // groupBox2
             // 
@@ -328,11 +326,6 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // ucCC1
-            // 
-            resources.ApplyResources(this.ucCC1, "ucCC1");
-            this.ucCC1.Name = "ucCC1";
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.ucCC2);
@@ -340,22 +333,12 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // ucCC2
-            // 
-            resources.ApplyResources(this.ucCC2, "ucCC2");
-            this.ucCC2.Name = "ucCC2";
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.ucCC3);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // ucCC3
-            // 
-            resources.ApplyResources(this.ucCC3, "ucCC3");
-            this.ucCC3.Name = "ucCC3";
             // 
             // txtRow2
             // 
@@ -372,12 +355,6 @@
             resources.ApplyResources(this.txtRow1, "txtRow1");
             this.txtRow1.Name = "txtRow1";
             // 
-            // ucShippingAddress
-            // 
-            this.ucShippingAddress.AddressType = QuickBooks.BusObj.Enums.AddressType.Billing;
-            resources.ApplyResources(this.ucShippingAddress, "ucShippingAddress");
-            this.ucShippingAddress.Name = "ucShippingAddress";
-            // 
             // txtTrim
             // 
             resources.ApplyResources(this.txtTrim, "txtTrim");
@@ -392,12 +369,6 @@
             // 
             resources.ApplyResources(this.txtModel, "txtModel");
             this.txtModel.Name = "txtModel";
-            // 
-            // ucBillingAddress
-            // 
-            this.ucBillingAddress.AddressType = QuickBooks.BusObj.Enums.AddressType.Billing;
-            resources.ApplyResources(this.ucBillingAddress, "ucBillingAddress");
-            this.ucBillingAddress.Name = "ucBillingAddress";
             // 
             // label13
             // 
@@ -572,6 +543,49 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // ucCustomerInfo1
+            // 
+            this.ucCustomerInfo1.FullName = "";
+            resources.ApplyResources(this.ucCustomerInfo1, "ucCustomerInfo1");
+            this.ucCustomerInfo1.Name = "ucCustomerInfo1";
+            // 
+            // ucCC1
+            // 
+            resources.ApplyResources(this.ucCC1, "ucCC1");
+            this.ucCC1.Name = "ucCC1";
+            // 
+            // ucCC2
+            // 
+            resources.ApplyResources(this.ucCC2, "ucCC2");
+            this.ucCC2.Name = "ucCC2";
+            // 
+            // ucCC3
+            // 
+            resources.ApplyResources(this.ucCC3, "ucCC3");
+            this.ucCC3.Name = "ucCC3";
+            // 
+            // ucShippingAddress
+            // 
+            this.ucShippingAddress.AddressType = QuickBooks.BusObj.Enums.AddressType.Billing;
+            resources.ApplyResources(this.ucShippingAddress, "ucShippingAddress");
+            this.ucShippingAddress.Name = "ucShippingAddress";
+            // 
+            // ucBillingAddress
+            // 
+            this.ucBillingAddress.AddressType = QuickBooks.BusObj.Enums.AddressType.Billing;
+            resources.ApplyResources(this.ucBillingAddress, "ucBillingAddress");
+            this.ucBillingAddress.Name = "ucBillingAddress";
+            // 
+            // txtNotes
+            // 
+            resources.ApplyResources(this.txtNotes, "txtNotes");
+            this.txtNotes.Name = "txtNotes";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
             // frmOrder
             // 
             resources.ApplyResources(this, "$this");
@@ -683,5 +697,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.RadioButton rbWireTransfer;
         private System.Windows.Forms.RadioButton rbCredit;
+        private System.Windows.Forms.TextBox txtNotes;
+        private System.Windows.Forms.Label label3;
     }
 }

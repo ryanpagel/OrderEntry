@@ -453,7 +453,9 @@ namespace QuickBooks.UI
                     string.Format("  Ph2: {0,-30}{1,-30}{2,-30}", coo.Customer.AltPhone, coo.Customer.BillingAddress.Line3, coo.Customer.ShippingAddress.Line3) + "\r\n") +
                     string.Format("Email: {0,-30}{1,-30}{2,-30}", coo.Customer.Email, coo.Customer.BillingAddress.Line4, coo.Customer.ShippingAddress.Line4) + "\r\n") +
                     string.Format("AltCt: {0,-30}{1,-30}{2,-30}", (object[])new string[] { coo.Customer.AltContact, (coo.Customer.BillingAddress.City + "," + coo.Customer.BillingAddress.State), (coo.Customer.ShippingAddress.City + "," + coo.Customer.ShippingAddress.State) }) + "\r\n") +
-                    string.Format("{0,-37}{1,-30}{2,-30}", "", coo.Customer.BillingAddress.Zip, coo.Customer.ShippingAddress.Zip) + "\r\n\r\n") + "       VEHICLE\r\n") + " Year: " + coo.Vehicle.Year + "\r\n") + " Make: " + coo.Vehicle.Make+ "\r\n") + "Model: " + coo.Vehicle.Model + "\r\n") + " Trim: " + coo.Vehicle.Trim + "\r\n") + " Row1: " + coo.Vehicle.Row1 + "\r\n") + " Row2: " + coo.Vehicle.Row2 + "\r\n") + " Row3: " + coo.Vehicle.Row3 + "\r\n\r\n") + "       PAYMENT: ";
+                    string.Format("{0,-37}{1,-30}{2,-30}", "", coo.Customer.BillingAddress.Zip, coo.Customer.ShippingAddress.Zip) + "\r\n\r\n") +
+                    "\r\n" + "Notes: " + txtNotes.Text + "\r\n\r\n" +
+                    "       VEHICLE\r\n") + " Year: " + coo.Vehicle.Year + "\r\n") + " Make: " + coo.Vehicle.Make+ "\r\n") + "Model: " + coo.Vehicle.Model + "\r\n") + " Trim: " + coo.Vehicle.Trim + "\r\n") + " Row1: " + coo.Vehicle.Row1 + "\r\n") + " Row2: " + coo.Vehicle.Row2 + "\r\n") + " Row3: " + coo.Vehicle.Row3 + "\r\n\r\n") + "       PAYMENT: ";
                 if (rbCC.Checked)
                     ps += "Credit Card";
                 else if (rbCheck.Checked)
