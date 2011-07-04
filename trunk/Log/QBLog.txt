@@ -1,1 +1,2 @@
-﻿Here is some text in the log file.
+﻿
+Here is some text in the log file.
