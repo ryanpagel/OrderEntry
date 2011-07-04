@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer CustomerID="80001E94-1203356166" EditSequence="1203709700" FullName="Brian Highsmith" Phone="813-215-5876" Email="b.highsmith@yahoo.com" AltPhone="" AltContact="">
+    <AddressSet>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Brian Highsmith</Line1>
+        <Line2>
+6640 Banner Lake Circle, Apt. #7202</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Orlando</City>
+        <State>FL</State>
+        <Zip>32821</Zip>
+      </Address>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Brian Highsmith</Line1>
+        <Line2>6640 Banner Lake Circle, Apt. #7202</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Orlando</City>
+        <State>FL</State>
+        <Zip>32821</Zip>
+      </Address>
+    </AddressSet>
+    <CreditCardSet />
+    <CreditCard>
+      <CardholderName>Brian Highsmith</CardholderName>
+      <CardNumber>

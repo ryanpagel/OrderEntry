@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer CustomerID="80001C88-1192572537" EditSequence="1192572543" FullName="Davis Auto Reconditioning" Phone="610 356-2552" Email="LD2908@comcast.net" AltPhone="" AltContact="Lee Davis">
+    <AddressSet>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Davis Auto Reconditioning</Line1>
+        <Line2>
+PO BOX 61</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Edgemont</City>
+        <State>PA</State>
+        <Zip>19028</Zip>
+      </Address>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Davis Auto Reconditioning</Line1>
+        <Line2>5050 West Chester Pike</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Edgemont</City>
+        <State>PA</State>
+        <Zip>19028</Zip>
+      </Address>
+    </AddressSet>
+    <CreditCardSet />
+    <CreditCard CardholderName="Davis Auto Reconditioning" CardNumber="29Rv8KYmWCPk+ozgofMifQieZZRkHEqjPxn3l2/EGBw=" CreditCardType="Visa" ExpirationDate="08/10" Note="" />
+    <CreditCard CardholderName="" CardNumber="" CreditCardType="UnknownOrNotSet" ExpirationDate="" Note="" />
+    <CreditCard CardholderName="" CardNumber="" CreditCardType="UnknownOrNotSet" ExpirationDate="" Note="" />
+  </Customer>
+  <Vehicle Make="fd" Model="fd" Row1="fdfd" Row2="fd" Row3="fd" Trim="df" Year="0" />
+  <Order GrandTotal="16.31" OrderDate="7/7/2010" PaymentMethod="CreditCard" SubTotal="15" Taxes="1.31">
+    <OrderItem Account="" Description="Dash Kit" IsTaxed="true" ItemName="Dash Kits" Price="1" Quantity="15" ItemID="0" Total="15" />
+  </Order>
+</CustomerOrderContainer>

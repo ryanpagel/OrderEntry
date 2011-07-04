@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <OrderDate>2010-07-07T09:53:37.217-05:00</OrderDate>
+    <SubTotal>15</SubTotal>
+    <Taxes>1.31</Taxes>
+    <GrandTotal>16.31</GrandTotal>
+    <PaymentMethod>CreditCard</PaymentMethod>
+    <OrderItems>
+      <OrderItem>
+        <RefNum>0</RefNum>
+        <Account />
+        <ItemName>Dash Kits</ItemName>
+        <Description>Dash Kit</Description>
+        <Quantity>15</Quantity>
+        <Total>15</Total>
+        <Price>1</Price>
+        <IsTaxed>true</IsTaxed>
+      </OrderItem>
+    </OrderItems>
+  </Order>
+  <Vehicle>
+    <Year>0</Year>
+    <Make>fd</Make>
+    <Model>fd</Model>
+    <Trim>df</Trim>
+    <Row1>fdfd</Row1>
+    <Row2>fd</Row2>
+    <Row3>fd</Row3>
+  </Vehicle>
+  <Customer>
+    <CustomerID>80001C88-1192572537</CustomerID>
+    <AltPhone />
+    <Email>LD2908@comcast.net</Email>
+    <AltContact>Lee Davis</AltContact>
+    <PoBox />
+    <EditSequence>1192572543</EditSequence>
+    <Phone>610 356-2552</Phone>
+    <FullName>Davis Auto Reconditioning</FullName>
+    <BillingAddress>
+      <AddressType>Billing</AddressType>
+      <Line1>Davis Auto Reconditioning</Line1>
+      <Line2>
+PO BOX 61</Line2>
+      <Line3 />
+      <Line4 />
+      <City>Edgemont</City>
+      <State>PA</State>
+      <Zip>19028</Zip>
+    </BillingAddress>
+    <ShippingAddress>
+      <AddressType>Billing</AddressType>
+      <Line1>Davis Auto Reconditioning</Line1>
+      <Line2>5050 West Chester Pike</Line2>
+      <Line3 />
+      <Line4 />
+      <City>Edgemont</City>
+      <State>PA</State>
+      <Zip>19028</Zip>
+    </ShippingAddress>
+    <CreditCards>
+      <CreditCard>
+        <CreditCardType>Visa</CreditCardType>
+        <CardholderName>Davis Auto Reconditioning</CardholderName>
+        <CardNumber>3727-113-695-43006</CardNumber>
+        <ExpirationDate>08/10</ExpirationDate>
+        <Note />
+      </CreditCard>
+      <CreditCard>
+        <CreditCardType>UnknownOrNotSet</CreditCardType>
+        <CardholderName />
+        <CardNumber />
+        <ExpirationDate />
+        <Note />
+      </CreditCard>
+      <CreditCard>
+        <CreditCardType>UnknownOrNotSet</CreditCardType>
+        <CardholderName />
+        <CardNumber />
+        <ExpirationDate />
+        <Note />
+      </CreditCard>
+    </CreditCards>
+  </Customer>
+</CustomerOrderObject>

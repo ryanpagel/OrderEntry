@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/Main/!svn/ver/8/QuickBooks/trunk/Util
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Main/!svn/ver/19/QuickBooks/trunk/Util/Logger.cs
+END
+ExtensionMethods.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Main/!svn/ver/19/QuickBooks/trunk/Util/ExtensionMethods.cs
+END
+Settings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Main/!svn/ver/18/QuickBooks/trunk/Util/Settings.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Main/!svn/ver/13/QuickBooks/trunk/Util/Exceptions.cs
+END
+IEncryption.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Main/!svn/ver/8/QuickBooks/trunk/Util/IEncryption.cs
+END
+IncludeAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Main/!svn/ver/2/QuickBooks/trunk/Util/IncludeAttribute.cs
+END
+ILogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Main/!svn/ver/2/QuickBooks/trunk/Util/ILogger.cs
+END
+PendingOrdersUpdater.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Main/!svn/ver/18/QuickBooks/trunk/Util/PendingOrdersUpdater.cs
+END
+ISettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Main/!svn/ver/18/QuickBooks/trunk/Util/ISettings.cs
+END
+Encryption.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Main/!svn/ver/10/QuickBooks/trunk/Util/Encryption.cs
+END

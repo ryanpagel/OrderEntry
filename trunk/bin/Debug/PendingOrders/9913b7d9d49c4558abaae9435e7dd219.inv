@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer FileKey="9913b7d9d49c4558abaae9435e7dd219" SaveLocation="RightPanel">
+  <Customer>
+    <CustomerID></CustomerID>
+    <EditSequence></EditSequence>
+    <FullName>New TestCust1</FullName>
+    <Phone></Phone>
+    <Email></Email>
+    <AltPhone></AltPhone>
+    <AltContact></AltContact>
+  </Customer>
+  <Vehicle>
+    <Make></Make>
+    <Model></Model>
+    <Row1></Row1>
+    <Row2></Row2>
+    <Row3></Row3>
+    <Trim></Trim>
+    <Year>0</Year>
+  </Vehicle>
+  <Order GrandTotal="0" OrderDate="7/12/2010" PaymentMethod="Check" SubTotal="0" Taxes="0">
+    <OrderItem>
+      <Account></Account>
+      <Description>Katzkin Leather Kit</Description>
+      <IsTaxed>true</IsTaxed>
+      <ItemName>Blowout Leather Interior Kits</ItemName>
+      <Price>0</Price>
+      <Quantity>0</Quantity>
+      <ItemID>8000005F-1213654845</ItemID>
+      <Total>0</Total>
+    </OrderItem>
+  </Order>
+  <CreditCardSet>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>Mastercard</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </CreditCardSet>
+  <AddressSet>
+    <Address>
+      <Type>Billing</Type>
+      <Line1>test ave #12</Line1>
+      <Line2></Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>City</City>
+      <State>OK</State>
+      <Zip>12345</Zip>
+    </Address>
+    <Address>
+      <Type>Shipping</Type>
+      <Line1>test ave #12</Line1>
+      <Line2></Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>City</City>
+      <State>OK</State>
+      <Zip>12345</Zip>
+    </Address>
+  </AddressSet>
+</CustomerOrderContainer>

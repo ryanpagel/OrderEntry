@@ -1,0 +1,14 @@
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\QuickBooks.UI.exe
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\QuickBooks.UI.pdb
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.frmMain.resources
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.frmOrder.resources
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.Properties.Resources.resources
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.exe
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\obj\Debug\QuickBooks.UI.pdb
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\CFI.exe
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\Data.dll
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\Interop.QBFC2Lib.dll
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\CFI.pdb
+C:\Users\Ryan\Documents\Visual Studio 2008\Projects\QuickBooks.UI\bin\Debug\Data.pdb

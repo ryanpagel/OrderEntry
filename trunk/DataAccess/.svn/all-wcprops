@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/Main/!svn/ver/8/QuickBooks/trunk/DataAccess
+END
+IQBRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Main/!svn/ver/21/QuickBooks/trunk/DataAccess/IQBRepository.cs
+END
+IFileSystemRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Main/!svn/ver/14/QuickBooks/trunk/DataAccess/IFileSystemRepository.cs
+END
+QBRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Main/!svn/ver/22/QuickBooks/trunk/DataAccess/QBRepository.cs
+END
+FileSystemRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Main/!svn/ver/14/QuickBooks/trunk/DataAccess/FileSystemRepository.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Main/!svn/ver/19/QuickBooks/trunk/DataAccess/Enums.cs
+END

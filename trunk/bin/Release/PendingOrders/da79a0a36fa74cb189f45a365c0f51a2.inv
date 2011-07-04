@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer FileKey="da79a0a36fa74cb189f45a365c0f51a2" SaveLocation="RightPanel">
+  <Customer>
+    <CustomerID>80002E59-1279983671</CustomerID>
+    <EditSequence>1279983673</EditSequence>
+    <FullName>test900</FullName>
+    <Phone></Phone>
+    <Email></Email>
+    <AltPhone></AltPhone>
+    <AltContact></AltContact>
+  </Customer>
+  <Vehicle>
+    <Make></Make>
+    <Model></Model>
+    <Row1></Row1>
+    <Row2></Row2>
+    <Row3></Row3>
+    <Trim></Trim>
+    <Year>0</Year>
+  </Vehicle>
+  <Order GrandTotal="15" OrderDate="7/24/2010" PaymentMethod="MoneyOrder" SubTotal="15" Taxes="0">
+    <OrderItem>
+      <Account></Account>
+      <Description>Katzkin Leather Kit</Description>
+      <IsTaxed>true</IsTaxed>
+      <ItemName>Blowout Leather Interior Kits</ItemName>
+      <Price>15</Price>
+      <Quantity>1</Quantity>
+      <ItemID>8000005F-1213654845</ItemID>
+      <Total>15</Total>
+    </OrderItem>
+    <OrderItem>
+      <Account></Account>
+      <Description>Katzkin Leather Kit</Description>
+      <IsTaxed>true</IsTaxed>
+      <ItemName>Blowout Leather Interior Kits</ItemName>
+      <Price>15</Price>
+      <Quantity>1</Quantity>
+      <ItemID>8000005F-1213654845</ItemID>
+      <Total>15</Total>
+    </OrderItem>
+  </Order>
+  <CreditCardSet>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>Amex</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>Visa</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>Visa</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </CreditCardSet>
+  <AddressSet>
+    <Address>
+      <Type>Billing</Type>
+      <Line1></Line1>
+      <Line2></Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City></City>
+      <State></State>
+      <Zip></Zip>
+    </Address>
+    <Address>
+      <Type>Shipping</Type>
+      <Line1></Line1>
+      <Line2></Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City></City>
+      <State></State>
+      <Zip></Zip>
+    </Address>
+  </AddressSet>
+</CustomerOrderContainer>

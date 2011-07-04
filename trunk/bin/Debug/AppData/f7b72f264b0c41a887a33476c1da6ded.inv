@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer CustomerID="11C20000-1140556212" EditSequence="1140556214" FullName="Earnest Johnson" Phone="318-343-1489" Email="eljohnson00@yahoo.com" AltPhone="" AltContact="">
+    <AddressSet>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Earnest Johnson</Line1>
+        <Line2>
+318 Woodale Drive, Apt. 26</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Monroe</City>
+        <State>LA</State>
+        <Zip>71203</Zip>
+      </Address>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Earnest Johnson</Line1>
+        <Line2>318 Woodale Drive, Apt. 26</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Monroe</City>
+        <State>LA</State>
+        <Zip>71203</Zip>
+      </Address>
+    </AddressSet>
+    <CreditCardSet />
+    <CreditCard>
+      <CardholderName>Earnest L, Johnson</CardholderName>
+      <CardNumber>5112-9382-0005-2707</CardNumber>
+      <CreditCardType>Mastercard</CreditCardType>
+      <ExpirationDate>01/09</ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </Customer>
+  <Vehicle Make="asdf" Model="df" Row1="df" Row2="df" Row3="df" Trim="fd" Year="0" />
+  <Order GrandTotal="4209.71" OrderDate="7/7/2010" PaymentMethod="Check" SubTotal="3871" Taxes="338.71">
+    <OrderItem Account="" Description="Deluxe Leather Kit in" IsTaxed="true" ItemName="Ebay Leather Interior Kits" Price="679" Quantity="5" ItemID="0" Total="3395" />
+    <OrderItem Account="" Description="Seat Heater" IsTaxed="true" ItemName="Heater/Cooler/Massager" Price="119" Quantity="4" ItemID="0" Total="476" />
+  </Order>
+</CustomerOrderContainer>

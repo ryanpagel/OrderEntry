@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1840af21-fe74-469f-835b-3ef45b31ef37" name="Ryan@RYAN-PC 2010-07-13 20:22:38" runUser="Ryan-PC\Ryan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="c2662d0b-84f4-491d-9f5c-5f69d0445cbc">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Repositories\QuickBooks\trunk\TestResults\Ryan_RYAN-PC 2010-07-13 20_22_38">
+      <DeploymentItem filename="C:\Repositories\QuickBooks\QuickBooks.Test\ThirdParty\Moq.dll" />
+      <DeploymentItem filename="C:\Repositories\QuickBooks\trunk\bin\Release\QuickBooks.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-07-13T20:22:38.1860000-05:00" queuing="2010-07-13T20:22:44.1860000-05:00" start="2010-07-13T20:22:44.7350000-05:00" finish="2010-07-13T20:27:14.0220000-05:00" />
+  <TestDefinitions>
+    <UnitTest name="AddCreditCardsWithNewCustomer" storage="c:\repositories\quickbooks\quickbooks.test\bin\release\quickbooks.test.dll" id="6a51d7b9-9022-62ff-5300-a6f145de9d3d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="3c40f547-eb28-437b-a386-58b534d5b044" />
+      <TestMethod codeBase="C:\Repositories\QuickBooks\QuickBooks.Test\bin\Release\QuickBooks.Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuickBooks.Test.QBRepositoryTest, QuickBooks.Test" name="AddCreditCardsWithNewCustomer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6a51d7b9-9022-62ff-5300-a6f145de9d3d" executionId="3c40f547-eb28-437b-a386-58b534d5b044" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3c40f547-eb28-437b-a386-58b534d5b044" testId="6a51d7b9-9022-62ff-5300-a6f145de9d3d" testName="AddCreditCardsWithNewCustomer" computerName="RYAN-PC" duration="00:04:27.8177086" startTime="2010-07-13T20:22:44.9290000-05:00" endTime="2010-07-13T20:27:13.8540000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at QuickBooks.Test.QBRepositoryTest.AddCreditCardsWithNewCustomer() in C:\Repositories\QuickBooks\QuickBooks.Test\QBRepositoryTests.cs:line 156
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

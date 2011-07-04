@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/Main/!svn/ver/8/QuickBooks/trunk/UI
+END
+frmSplash.resx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/frmSplash.resx
+END
+ucAddress.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/ucAddress.Designer.cs
+END
+ucAddress.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Main/!svn/ver/19/QuickBooks/trunk/UI/ucAddress.cs
+END
+frmOrder.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmOrder.Designer.cs
+END
+frmOrder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Main/!svn/ver/20/QuickBooks/trunk/UI/frmOrder.cs
+END
+ucCustomerInfo.resx
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Main/!svn/ver/8/QuickBooks/trunk/UI/ucCustomerInfo.resx
+END
+frmSettings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Main/!svn/ver/14/QuickBooks/trunk/UI/frmSettings.resx
+END
+frmLog.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmLog.Designer.cs
+END
+frmLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmLog.cs
+END
+frmMain.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmMain.Designer.cs
+END
+ucAddress.resx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/ucAddress.resx
+END
+frmMain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Main/!svn/ver/22/QuickBooks/trunk/UI/frmMain.cs
+END
+ucCreditCard.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Main/!svn/ver/18/QuickBooks/trunk/UI/ucCreditCard.Designer.cs
+END
+frmCustomerSearch.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmCustomerSearch.Designer.cs
+END
+frmOrder.resx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmOrder.resx
+END
+frmCustomerSearch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmCustomerSearch.cs
+END
+ucCreditCard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Main/!svn/ver/13/QuickBooks/trunk/UI/ucCreditCard.cs
+END
+ucLineItem.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/ucLineItem.Designer.cs
+END
+frmSplash.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/frmSplash.Designer.cs
+END
+ucLineItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Main/!svn/ver/13/QuickBooks/trunk/UI/ucLineItem.cs
+END
+frmSplash.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/frmSplash.cs
+END
+frmLog.resx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Main/!svn/ver/5/QuickBooks/trunk/UI/frmLog.resx
+END
+frmSettings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Main/!svn/ver/21/QuickBooks/trunk/UI/frmSettings.Designer.cs
+END
+ucCustomerInfo.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Main/!svn/ver/19/QuickBooks/trunk/UI/ucCustomerInfo.Designer.cs
+END
+frmSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Main/!svn/ver/22/QuickBooks/trunk/UI/frmSettings.cs
+END
+frmMain.resx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Main/!svn/ver/14/QuickBooks/trunk/UI/frmMain.resx
+END
+ucCustomerInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Main/!svn/ver/19/QuickBooks/trunk/UI/ucCustomerInfo.cs
+END
+frmCustomerSearch.resx
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Main/!svn/ver/7/QuickBooks/trunk/UI/frmCustomerSearch.resx
+END
+ucCreditCard.resx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/ucCreditCard.resx
+END
+ucLineItem.resx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Main/!svn/ver/2/QuickBooks/trunk/UI/ucLineItem.resx
+END

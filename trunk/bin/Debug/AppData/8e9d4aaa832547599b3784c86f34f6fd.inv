@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer CustomerID="80001E94-1203356166" EditSequence="1203709700" FullName="Brian Highsmith" Phone="813-215-5876" Email="b.highsmith@yahoo.com" AltPhone="" AltContact="">
+    <AddressSet>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Brian Highsmith</Line1>
+        <Line2>
+6640 Banner Lake Circle, Apt. #7202</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Orlando</City>
+        <State>FL</State>
+        <Zip>32821</Zip>
+      </Address>
+      <Address>
+        <Type>Billing</Type>
+        <Line1>Brian Highsmith</Line1>
+        <Line2>6640 Banner Lake Circle, Apt. #7202</Line2>
+        <Line3></Line3>
+        <Line4></Line4>
+        <City>Orlando</City>
+        <State>FL</State>
+        <Zip>32821</Zip>
+      </Address>
+    </AddressSet>
+    <CreditCardSet />
+    <CreditCard>
+      <CardholderName>Brian Highsmith</CardholderName>
+      <CardNumber>A0VwwVQM3+FvRuZl2ksGjU0LtTdn2S/2dclldRsRZro=</CardNumber>
+      <CreditCardType>Visa</CreditCardType>
+      <ExpirationDate>09/09/718</ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </Customer>
+  <Vehicle Make="df" Model="df" Row1="df" Row2="fd" Row3="fd" Trim="sdf" Year="0" />
+  <Order GrandTotal="1409.4" OrderDate="7/7/2010" PaymentMethod="Check" SubTotal="1296" Taxes="113.4">
+    <OrderItem Account="" Description="Leather Cleaner" IsTaxed="true" ItemName="Cleaner/Conditioner" Price="54" Quantity="24" ItemID="0" Total="1296" />
+  </Order>
+</CustomerOrderContainer>

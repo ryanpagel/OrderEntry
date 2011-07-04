@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer>
+    <CustomerID>80001E94-1203356166</CustomerID>
+    <EditSequence>1203709700</EditSequence>
+    <FullName>Brian Highsmith</FullName>
+    <Phone>813-215-5876</Phone>
+    <Email>b.highsmith@yahoo.com</Email>
+    <AltPhone></AltPhone>
+    <AltContact></AltContact>
+  </Customer>
+  <Vehicle>
+    <Make></Make>
+    <Model></Model>
+    <Row1></Row1>
+    <Row2></Row2>
+    <Row3></Row3>
+    <Trim></Trim>
+    <Year>0</Year>
+  </Vehicle>
+  <Order GrandTotal="0" OrderDate="7/8/2010" PaymentMethod="NotSelected" SubTotal="0" Taxes="0">
+    <OrderItem>
+      <Account></Account>
+      <Description></Description>
+      <IsTaxed>false</IsTaxed>
+      <ItemName></ItemName>
+      <Price>0</Price>
+      <Quantity>0</Quantity>
+      <ItemID />
+      <Total>0</Total>
+    </OrderItem>
+  </Order>
+  <CreditCardSet>
+    <CreditCard>
+      <CardholderName>Brian Highsmith</CardholderName>
+      <CardNumber>A0VwwVQM3+FvRuZl2ksGjU0LtTdn2S/2dclldRsRZro=</CardNumber>
+      <CreditCardType>Visa</CreditCardType>
+      <ExpirationDate>09/09/718</ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </CreditCardSet>
+  <AddressSet>
+    <Address>
+      <Type>Billing</Type>
+      <Line1>Brian Highsmith</Line1>
+      <Line2>
+6640 Banner Lake Circle, Apt. #7202</Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32821</Zip>
+    </Address>
+    <Address>
+      <Type>Shipping</Type>
+      <Line1>Brian Highsmith</Line1>
+      <Line2>6640 Banner Lake Circle, Apt. #7202</Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32821</Zip>
+    </Address>
+  </AddressSet>
+</CustomerOrderContainer>

@@ -1,0 +1,33 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 19
+/svn/Main/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/Main/!svn/ver/8/QuickBooks/trunk
+END
+QuickBooks.sln
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Main/!svn/ver/19/QuickBooks/trunk/QuickBooks.sln
+END
+QuickBooks.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Main/!svn/ver/19/QuickBooks/trunk/QuickBooks.csproj.user
+END
+QuickBooks.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Main/!svn/ver/19/QuickBooks/trunk/QuickBooks.csproj
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/Main/!svn/ver/22/QuickBooks/trunk/Program.cs
+END

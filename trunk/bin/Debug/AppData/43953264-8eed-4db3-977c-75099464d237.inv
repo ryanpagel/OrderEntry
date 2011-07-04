@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomerOrderContainer>
+  <Customer>
+    <CustomerID>80001E94-1203356166</CustomerID>
+    <EditSequence>1203709700</EditSequence>
+    <FullName>Brian Highsmith</FullName>
+    <Phone>813-215-5876</Phone>
+    <Email>b.highsmith@yahoo.com</Email>
+    <AltPhone></AltPhone>
+    <AltContact></AltContact>
+  </Customer>
+  <Vehicle>
+    <Make>d</Make>
+    <Model>fd</Model>
+    <Row1>fd</Row1>
+    <Row2>f</Row2>
+    <Row3>df</Row3>
+    <Trim>sdf</Trim>
+    <Year>0</Year>
+  </Vehicle>
+  <Order GrandTotal="16067.76" OrderDate="7/8/2010" PaymentMethod="Check" SubTotal="14774.95" Taxes="1292.81">
+    <OrderItem>
+      <Account></Account>
+      <Description>Logos</Description>
+      <IsTaxed>true</IsTaxed>
+      <ItemName>Logos</ItemName>
+      <Price>35</Price>
+      <Quantity>415</Quantity>
+      <ItemID />
+      <Total>14525</Total>
+    </OrderItem>
+    <OrderItem>
+      <Account></Account>
+      <Description>Steering Wheel Cover</Description>
+      <IsTaxed>true</IsTaxed>
+      <ItemName>Wheelskin</ItemName>
+      <Price>49.99</Price>
+      <Quantity>5</Quantity>
+      <ItemID />
+      <Total>249.95</Total>
+    </OrderItem>
+  </Order>
+  <CreditCardSet>
+    <CreditCard>
+      <CardholderName>Brian Highsmith</CardholderName>
+      <CardNumber>A0VwwVQM3+FvRuZl2ksGjU0LtTdn2S/2dclldRsRZro=</CardNumber>
+      <CreditCardType>Visa</CreditCardType>
+      <ExpirationDate>09/09/718</ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+    <CreditCard>
+      <CardholderName></CardholderName>
+      <CardNumber></CardNumber>
+      <CreditCardType>UnknownOrNotSet</CreditCardType>
+      <ExpirationDate></ExpirationDate>
+      <Note></Note>
+    </CreditCard>
+  </CreditCardSet>
+  <AddressSet>
+    <Address>
+      <Type>Billing</Type>
+      <Line1>Brian Highsmith</Line1>
+      <Line2>
+6640 Banner Lake Circle, Apt. #7202</Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32821</Zip>
+    </Address>
+    <Address>
+      <Type>Shipping</Type>
+      <Line1>Brian Highsmith</Line1>
+      <Line2>6640 Banner Lake Circle, Apt. #7202</Line2>
+      <Line3></Line3>
+      <Line4></Line4>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32821</Zip>
+    </Address>
+  </AddressSet>
+</CustomerOrderContainer>

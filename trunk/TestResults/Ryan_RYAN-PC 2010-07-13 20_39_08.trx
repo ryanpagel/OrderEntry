@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8334b4d7-8544-46c6-a3d0-7e60ee065247" name="Ryan@RYAN-PC 2010-07-13 20:39:08" runUser="Ryan-PC\Ryan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="c2662d0b-84f4-491d-9f5c-5f69d0445cbc">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Repositories\QuickBooks\trunk\TestResults\Ryan_RYAN-PC 2010-07-13 20_39_08">
+      <DeploymentItem filename="C:\Repositories\QuickBooks\QuickBooks.Test\ThirdParty\Moq.dll" />
+      <DeploymentItem filename="C:\Repositories\QuickBooks\trunk\bin\Release\QuickBooks.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-07-13T20:39:08.0780000-05:00" queuing="2010-07-13T20:39:11.1250000-05:00" start="2010-07-13T20:39:11.6310000-05:00" finish="2010-07-13T20:41:12.4580000-05:00" />
+  <TestDefinitions>
+    <UnitTest name="ModifyCreditCardInfo" storage="c:\repositories\quickbooks\quickbooks.test\bin\release\quickbooks.test.dll" id="7fe1d799-3e3a-9ee7-b1a7-2ef29d339178">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f783c459-ca9e-40cd-8f9c-301859c7969f" />
+      <TestMethod codeBase="C:\Repositories\QuickBooks\QuickBooks.Test\bin\Release\QuickBooks.Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuickBooks.Test.QBRepositoryTest, QuickBooks.Test" name="ModifyCreditCardInfo" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7fe1d799-3e3a-9ee7-b1a7-2ef29d339178" executionId="f783c459-ca9e-40cd-8f9c-301859c7969f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f783c459-ca9e-40cd-8f9c-301859c7969f" testId="7fe1d799-3e3a-9ee7-b1a7-2ef29d339178" testName="ModifyCreditCardInfo" computerName="RYAN-PC" duration="00:01:59.3140172" startTime="2010-07-13T20:39:11.8180000-05:00" endTime="2010-07-13T20:41:12.3080000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at QuickBooks.Test.QBRepositoryTest.ModifyCreditCardInfo() in C:\Repositories\QuickBooks\QuickBooks.Test\QBRepositoryTests.cs:line 195
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
