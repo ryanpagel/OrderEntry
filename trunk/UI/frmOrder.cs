@@ -475,6 +475,7 @@ namespace QuickBooks.UI
                         txable = "Y";
                     ps = ps + string.Format("{0,-30}{1,-45}{2,-3} {3,-7} {4,-7} {5,-2}", (object[])new string[] { item.ItemName, item.Description, item.Quantity.ToString().PadLeft(3), string.Format("{0:n2}", item.Price).PadLeft(7), string.Format("{0:n2}", item.Total).PadLeft(7), txable }) + "\r\n";
 
+
                 }
                 ps = (((ps + "\r\n") + "   Subtotal: " + string.Format("{0:n2}", coo.Order.SubTotal).PadLeft(8) + "\r\n") + "      Taxes: " + string.Format("{0:n2}", coo.Order.Taxes).PadLeft(8) + "\r\n") + "Grand Total: " + string.Format("{0:n2}", coo.Order.GrandTotal).PadLeft(8) + "\r\n";
                 return ps;
