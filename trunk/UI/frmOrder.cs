@@ -477,7 +477,12 @@ namespace QuickBooks.UI
 
                 }
                 ps = (((ps + "\r\n") + "   Subtotal: " + string.Format("{0:n2}", coo.Order.SubTotal).PadLeft(8) + "\r\n") + "      Taxes: " + string.Format("{0:n2}", coo.Order.Taxes).PadLeft(8) + "\r\n") + "Grand Total: " + string.Format("{0:n2}", coo.Order.GrandTotal).PadLeft(8) + "\r\n";
+
+
                 return ps;
+
+
+
             }
             catch (Exception ex)
             {
