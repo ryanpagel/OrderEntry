@@ -253,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbWireTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 118</value>
+    <value>7, 135</value>
   </data>
   <data name="rbWireTransfer.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 17</value>
@@ -283,7 +283,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbPaypal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 95</value>
+    <value>7, 112</value>
   </data>
   <data name="rbPaypal.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
@@ -313,7 +313,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbMoneyOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 72</value>
+    <value>7, 89</value>
   </data>
   <data name="rbMoneyOrder.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
@@ -343,7 +343,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 49</value>
+    <value>7, 66</value>
   </data>
   <data name="rbCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 17</value>
@@ -366,6 +366,36 @@
   <data name="&gt;&gt;rbCheck.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="rbCredit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCredit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="rbCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="rbCredit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbCredit.Text" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Name" xml:space="preserve">
+    <value>rbCredit</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="rbCC.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -373,7 +403,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 26</value>
+    <value>7, 43</value>
   </data>
   <data name="rbCC.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 17</value>
@@ -394,13 +424,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;rbCC.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 252</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 145</value>
+    <value>127, 162</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>

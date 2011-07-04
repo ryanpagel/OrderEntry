@@ -29,7 +29,8 @@ namespace QuickBooks.BusObj
             MoneyOrder,
             PayPal,
             WireTransfer,
-            NotSelected
+            NotSelected,
+            Credit
         }
     }
 }

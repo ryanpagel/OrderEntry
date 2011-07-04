@@ -361,6 +361,8 @@ namespace QuickBooks.UI
                 return Enums.PaymentMethod.PayPal;
             else if (rbWireTransfer.Checked)
                 return Enums.PaymentMethod.WireTransfer;
+            else if (rbCredit.Checked)
+                return Enums.PaymentMethod.Credit;
             else return Enums.PaymentMethod.NotSelected;
         }
 
@@ -460,7 +462,10 @@ namespace QuickBooks.UI
                     ps += "Money Order";
                 else if (rbPaypal.Checked)
                     ps += "PayPal";
-                ps = (((((((((ps + "\r\n") + string.Format("       {0,-30}{1,-30}{2,-30}", "Card 1", "Card 2", "Card 3") + "\r\n") + string.Format(" Type: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CreditCardType, coo.Customer.CreditCards[1].CreditCardType, coo.Customer.CreditCards[2].CreditCardType) + "\r\n") + string.Format(" Name: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CardholderName, coo.Customer.CreditCards[1].CardholderName, coo.Customer.CreditCards[2].CardholderName) + "\r\n") + string.Format("  Num: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CardNumber, coo.Customer.CreditCards[1].CardNumber, coo.Customer.CreditCards[2].CardNumber) + "\r\n") + string.Format("  Exp: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].ExpirationDate, coo.Customer.CreditCards[1].ExpirationDate, coo.Customer.CreditCards[2].ExpirationDate) + "\r\n") + string.Format(" Note: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].Note, coo.Customer.CreditCards[0].Note, coo.Customer.CreditCards[0].Note) + "\r\n\r\n") + "       ORDER\r\n\r\n") + string.Format("{0,-30}{1,-45}{2,-3} {3,-7} {4,-7} {5,-2}", (object[])new string[] { "Name", "Description", "Qty", "Price", "Total", "Tx" }) + "\r\n") + string.Format("{0,-30}{1,-45}{2,-3} {3,-7} {4,-7} {5,-2}", (object[])new string[] { "----", "-----------", "---", "-------", "-------", "--" }) + "\r\n";
+                else if (rbCredit.Checked)
+                    ps += "Credit";
+
+                ps = (((((((((ps + "\r\n") + string.Format("       {0,-30}{1,-30}{2,-30}", "Card 1", "Card 2", "Card 3") + "\r\n") + string.Format(" Type: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CreditCardType, coo.Customer.CreditCards[1].CreditCardType, coo.Customer.CreditCards[2].CreditCardType) + "\r\n") + string.Format(" Name: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CardholderName, coo.Customer.CreditCards[1].CardholderName, coo.Customer.CreditCards[2].CardholderName) + "\r\n") + string.Format("  Num: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].CardNumber, coo.Customer.CreditCards[1].CardNumber, coo.Customer.CreditCards[2].CardNumber) + "\r\n") + string.Format("  Exp: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].ExpirationDate, coo.Customer.CreditCards[1].ExpirationDate, coo.Customer.CreditCards[2].ExpirationDate) + "\r\n") + string.Format(" Note: {0,-30}{1,-30}{2,-30}", coo.Customer.CreditCards[0].Note, coo.Customer.CreditCards[1].Note, coo.Customer.CreditCards[2].Note) + "\r\n\r\n") + "       ORDER\r\n\r\n") + string.Format("{0,-30}{1,-45}{2,-3} {3,-7} {4,-7} {5,-2}", (object[])new string[] { "Name", "Description", "Qty", "Price", "Total", "Tx" }) + "\r\n") + string.Format("{0,-30}{1,-45}{2,-3} {3,-7} {4,-7} {5,-2}", (object[])new string[] { "----", "-----------", "---", "-------", "-------", "--" }) + "\r\n";
                 foreach (var item in coo.Order.OrderItems)
                 {
                     string txable = "N";

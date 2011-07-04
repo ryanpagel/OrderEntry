@@ -44,9 +44,11 @@
             this.tpCust = new System.Windows.Forms.TabPage();
             this.ucCustomerInfo1 = new QuickBooks.UI.ucCustomerInfo();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbWireTransfer = new System.Windows.Forms.RadioButton();
             this.rbPaypal = new System.Windows.Forms.RadioButton();
             this.rbMoneyOrder = new System.Windows.Forms.RadioButton();
             this.rbCheck = new System.Windows.Forms.RadioButton();
+            this.rbCredit = new System.Windows.Forms.RadioButton();
             this.rbCC = new System.Windows.Forms.RadioButton();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -98,7 +100,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.rbWireTransfer = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCust.SuspendLayout();
@@ -240,10 +241,18 @@
             this.groupBox2.Controls.Add(this.rbPaypal);
             this.groupBox2.Controls.Add(this.rbMoneyOrder);
             this.groupBox2.Controls.Add(this.rbCheck);
+            this.groupBox2.Controls.Add(this.rbCredit);
             this.groupBox2.Controls.Add(this.rbCC);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // rbWireTransfer
+            // 
+            resources.ApplyResources(this.rbWireTransfer, "rbWireTransfer");
+            this.rbWireTransfer.Name = "rbWireTransfer";
+            this.rbWireTransfer.TabStop = true;
+            this.rbWireTransfer.UseVisualStyleBackColor = true;
             // 
             // rbPaypal
             // 
@@ -265,6 +274,13 @@
             this.rbCheck.Name = "rbCheck";
             this.rbCheck.TabStop = true;
             this.rbCheck.UseVisualStyleBackColor = true;
+            // 
+            // rbCredit
+            // 
+            resources.ApplyResources(this.rbCredit, "rbCredit");
+            this.rbCredit.Name = "rbCredit";
+            this.rbCredit.TabStop = true;
+            this.rbCredit.UseVisualStyleBackColor = true;
             // 
             // rbCC
             // 
@@ -556,13 +572,6 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
-            // rbWireTransfer
-            // 
-            resources.ApplyResources(this.rbWireTransfer, "rbWireTransfer");
-            this.rbWireTransfer.Name = "rbWireTransfer";
-            this.rbWireTransfer.TabStop = true;
-            this.rbWireTransfer.UseVisualStyleBackColor = true;
-            // 
             // frmOrder
             // 
             resources.ApplyResources(this, "$this");
@@ -673,5 +682,6 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.RadioButton rbWireTransfer;
+        private System.Windows.Forms.RadioButton rbCredit;
     }
 }
