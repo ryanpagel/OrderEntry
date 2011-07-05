@@ -7,6 +7,7 @@ using QuickBooks.BusObj;
 using QuickBooks.Util;
 using System.Windows.Forms;
 using System.Collections;
+using System.Threading;
 
 namespace QuickBooks.DataAccess
 {
@@ -21,6 +22,25 @@ namespace QuickBooks.DataAccess
         {
             _logger = logger;
             _settings = settings;
+        }
+
+        public bool HasValidConnection()
+        {
+            bool isValid = true;
+            try
+            {
+                this.OpenSession();
+                Thread.Sleep(2000);
+                this.CloseSession();
+            }
+            catch (Exception)
+            {
+                isValid = false;
+                
+            }
+
+            return isValid;
+
         }
 
         private void OpenSession()

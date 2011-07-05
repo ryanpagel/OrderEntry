@@ -23,6 +23,7 @@ namespace QuickBooks.Util
         event Action<Settings> SettingsReconfigured;
         double TaxableRate { get; set; }
         string TaxableState { get; set; }
+        bool IsConnected { get; set; }
         void Verify();
     }
 }

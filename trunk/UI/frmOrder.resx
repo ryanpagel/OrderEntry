@@ -127,6 +127,27 @@
   <data name="orderToolStripMenuItem.Text" xml:space="preserve">
     <value>Order</value>
   </data>
+  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>As Contact</value>
+  </data>
+  <data name="saveToRightPanelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="saveToRightPanelToolStripMenuItem.Text" xml:space="preserve">
+    <value>As Pending Order</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 6</value>
+  </data>
+  <data name="mnuSaveToQuickBooksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="mnuSaveToQuickBooksToolStripMenuItem.Text" xml:space="preserve">
+    <value>To QuickBooks</value>
+  </data>
   <data name="testToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
@@ -137,7 +158,7 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 24</value>
+    <value>857, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -159,7 +180,7 @@
     <value>4</value>
   </data>
   <data name="mnuPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="mnuPrint.Text" xml:space="preserve">
     <value>Print</value>
@@ -168,37 +189,16 @@
     <value>False</value>
   </data>
   <data name="mnuDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="mnuDelete.Text" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="mnuCloseOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="mnuCloseOrder.Text" xml:space="preserve">
     <value>Close</value>
-  </data>
-  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
-    <value>As Contact</value>
-  </data>
-  <data name="saveToRightPanelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="saveToRightPanelToolStripMenuItem.Text" xml:space="preserve">
-    <value>As Pending Order</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 6</value>
-  </data>
-  <data name="saveToQuickBooksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="saveToQuickBooksToolStripMenuItem.Text" xml:space="preserve">
-    <value>To QuickBooks</value>
   </data>
   <data name="dtOrderDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 36</value>
@@ -225,8 +225,431 @@
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;tpCust.Name" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;tpCust.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpCust.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tpCust.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpOrderDetails.Name" xml:space="preserve">
+    <value>tpOrderDetails</value>
+  </data>
+  <data name="&gt;&gt;tpOrderDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpOrderDetails.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tpOrderDetails.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 77</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>833, 452</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Name" xml:space="preserve">
+    <value>txtNotes</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtNotes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Name" xml:space="preserve">
+    <value>ucCustomerInfo1</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucCustomerInfo, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Name" xml:space="preserve">
+    <value>txtYear</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtYear.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
+    <value>btnCopy</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtRow3.Name" xml:space="preserve">
+    <value>txtRow3</value>
+  </data>
+  <data name="&gt;&gt;txtRow3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRow3.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtRow3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tcCreditCards.Name" xml:space="preserve">
+    <value>tcCreditCards</value>
+  </data>
+  <data name="&gt;&gt;tcCreditCards.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcCreditCards.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;tcCreditCards.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtRow2.Name" xml:space="preserve">
+    <value>txtRow2</value>
+  </data>
+  <data name="&gt;&gt;txtRow2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRow2.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtRow2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtRow1.Name" xml:space="preserve">
+    <value>txtRow1</value>
+  </data>
+  <data name="&gt;&gt;txtRow1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRow1.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtRow1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Name" xml:space="preserve">
+    <value>ucShippingAddress</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtTrim.Name" xml:space="preserve">
+    <value>txtTrim</value>
+  </data>
+  <data name="&gt;&gt;txtTrim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTrim.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtTrim.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtModel.Name" xml:space="preserve">
+    <value>txtModel</value>
+  </data>
+  <data name="&gt;&gt;txtModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtModel.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtModel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Name" xml:space="preserve">
+    <value>ucBillingAddress</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtMake.Name" xml:space="preserve">
+    <value>txtMake</value>
+  </data>
+  <data name="&gt;&gt;txtMake.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMake.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;txtMake.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;btnCustLookup.Name" xml:space="preserve">
+    <value>btnCustLookup</value>
+  </data>
+  <data name="&gt;&gt;btnCustLookup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCustLookup.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;btnCustLookup.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="tpCust.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tpCust.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpCust.Size" type="System.Drawing.Size, System.Drawing">
+    <value>825, 426</value>
+  </data>
+  <data name="tpCust.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpCust.Text" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="&gt;&gt;tpCust.Name" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;tpCust.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpCust.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tpCust.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 208</value>
@@ -275,27 +698,6 @@
   </data>
   <data name="&gt;&gt;txtNotes.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="ucCustomerInfo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 44</value>
-  </data>
-  <data name="ucCustomerInfo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 156</value>
-  </data>
-  <data name="ucCustomerInfo1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucCustomerInfo1.Name" xml:space="preserve">
-    <value>ucCustomerInfo1</value>
-  </data>
-  <data name="&gt;&gt;ucCustomerInfo1.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucCustomerInfo, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCustomerInfo1.Parent" xml:space="preserve">
-    <value>tpCust</value>
-  </data>
-  <data name="&gt;&gt;ucCustomerInfo1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;rbWireTransfer.Name" xml:space="preserve">
     <value>rbWireTransfer</value>
@@ -392,6 +794,186 @@
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="rbWireTransfer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbWireTransfer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbWireTransfer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 135</value>
+  </data>
+  <data name="rbWireTransfer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="rbWireTransfer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rbWireTransfer.Text" xml:space="preserve">
+    <value>Wire Transfer</value>
+  </data>
+  <data name="&gt;&gt;rbWireTransfer.Name" xml:space="preserve">
+    <value>rbWireTransfer</value>
+  </data>
+  <data name="&gt;&gt;rbWireTransfer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbWireTransfer.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbWireTransfer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbPaypal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbPaypal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbPaypal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 112</value>
+  </data>
+  <data name="rbPaypal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="rbPaypal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rbPaypal.Text" xml:space="preserve">
+    <value>PayPal</value>
+  </data>
+  <data name="&gt;&gt;rbPaypal.Name" xml:space="preserve">
+    <value>rbPaypal</value>
+  </data>
+  <data name="&gt;&gt;rbPaypal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbPaypal.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbPaypal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbMoneyOrder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbMoneyOrder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbMoneyOrder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 89</value>
+  </data>
+  <data name="rbMoneyOrder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 17</value>
+  </data>
+  <data name="rbMoneyOrder.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rbMoneyOrder.Text" xml:space="preserve">
+    <value>Money Order</value>
+  </data>
+  <data name="&gt;&gt;rbMoneyOrder.Name" xml:space="preserve">
+    <value>rbMoneyOrder</value>
+  </data>
+  <data name="&gt;&gt;rbMoneyOrder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbMoneyOrder.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbMoneyOrder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rbCheck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 66</value>
+  </data>
+  <data name="rbCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="rbCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rbCheck.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;rbCheck.Name" xml:space="preserve">
+    <value>rbCheck</value>
+  </data>
+  <data name="&gt;&gt;rbCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbCheck.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbCheck.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rbCredit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCredit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="rbCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="rbCredit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbCredit.Text" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Name" xml:space="preserve">
+    <value>rbCredit</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbCredit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rbCC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbCC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 43</value>
+  </data>
+  <data name="rbCC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="rbCC.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbCC.Text" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="&gt;&gt;rbCC.Name" xml:space="preserve">
+    <value>rbCC</value>
+  </data>
+  <data name="&gt;&gt;rbCC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbCC.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;rbCC.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="txtYear.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 260</value>
@@ -549,6 +1131,120 @@
   <data name="&gt;&gt;tcCreditCards.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="&gt;&gt;ucCC1.Name" xml:space="preserve">
+    <value>ucCC1</value>
+  </data>
+  <data name="&gt;&gt;ucCC1.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCC1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;ucCC1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 143</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Card 1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tcCreditCards</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucCC2.Name" xml:space="preserve">
+    <value>ucCC2</value>
+  </data>
+  <data name="&gt;&gt;ucCC2.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCC2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;ucCC2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 143</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Card 2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tcCreditCards</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ucCC3.Name" xml:space="preserve">
+    <value>ucCC3</value>
+  </data>
+  <data name="&gt;&gt;ucCC3.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCC3.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;ucCC3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 143</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Card 3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tcCreditCards</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="txtRow2.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 364</value>
   </data>
@@ -624,27 +1320,6 @@
   <data name="&gt;&gt;txtRow1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="ucShippingAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 48</value>
-  </data>
-  <data name="ucShippingAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 134</value>
-  </data>
-  <data name="ucShippingAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ucShippingAddress.Name" xml:space="preserve">
-    <value>ucShippingAddress</value>
-  </data>
-  <data name="&gt;&gt;ucShippingAddress.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucShippingAddress.Parent" xml:space="preserve">
-    <value>tpCust</value>
-  </data>
-  <data name="&gt;&gt;ucShippingAddress.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="txtTrim.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 312</value>
   </data>
@@ -719,27 +1394,6 @@
   </data>
   <data name="&gt;&gt;txtModel.ZOrder" xml:space="preserve">
     <value>15</value>
-  </data>
-  <data name="ucBillingAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 48</value>
-  </data>
-  <data name="ucBillingAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 134</value>
-  </data>
-  <data name="ucBillingAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ucBillingAddress.Name" xml:space="preserve">
-    <value>ucBillingAddress</value>
-  </data>
-  <data name="&gt;&gt;ucBillingAddress.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucBillingAddress.Parent" xml:space="preserve">
-    <value>tpCust</value>
-  </data>
-  <data name="&gt;&gt;ucBillingAddress.ZOrder" xml:space="preserve">
-    <value>16</value>
   </data>
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -1089,33 +1743,6 @@
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
-  <data name="tpCust.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tpCust.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpCust.Size" type="System.Drawing.Size, System.Drawing">
-    <value>807, 426</value>
-  </data>
-  <data name="tpCust.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tpCust.Text" xml:space="preserve">
-    <value>Customer Information</value>
-  </data>
-  <data name="&gt;&gt;tpCust.Name" xml:space="preserve">
-    <value>tpCust</value>
-  </data>
-  <data name="&gt;&gt;tpCust.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpCust.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tpCust.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;txtSubTotal.Name" xml:space="preserve">
     <value>txtSubTotal</value>
   </data>
@@ -1279,7 +1906,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpOrderDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>807, 426</value>
+    <value>825, 426</value>
   </data>
   <data name="tpOrderDetails.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1298,321 +1925,6 @@
   </data>
   <data name="&gt;&gt;tpOrderDetails.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 77</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>815, 452</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rbWireTransfer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbWireTransfer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbWireTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 135</value>
-  </data>
-  <data name="rbWireTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="rbWireTransfer.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="rbWireTransfer.Text" xml:space="preserve">
-    <value>Wire Transfer</value>
-  </data>
-  <data name="&gt;&gt;rbWireTransfer.Name" xml:space="preserve">
-    <value>rbWireTransfer</value>
-  </data>
-  <data name="&gt;&gt;rbWireTransfer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbWireTransfer.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbWireTransfer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="rbPaypal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbPaypal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbPaypal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 112</value>
-  </data>
-  <data name="rbPaypal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
-  </data>
-  <data name="rbPaypal.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="rbPaypal.Text" xml:space="preserve">
-    <value>PayPal</value>
-  </data>
-  <data name="&gt;&gt;rbPaypal.Name" xml:space="preserve">
-    <value>rbPaypal</value>
-  </data>
-  <data name="&gt;&gt;rbPaypal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbPaypal.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbPaypal.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="rbMoneyOrder.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbMoneyOrder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbMoneyOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 89</value>
-  </data>
-  <data name="rbMoneyOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 17</value>
-  </data>
-  <data name="rbMoneyOrder.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="rbMoneyOrder.Text" xml:space="preserve">
-    <value>Money Order</value>
-  </data>
-  <data name="&gt;&gt;rbMoneyOrder.Name" xml:space="preserve">
-    <value>rbMoneyOrder</value>
-  </data>
-  <data name="&gt;&gt;rbMoneyOrder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbMoneyOrder.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbMoneyOrder.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rbCheck.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 66</value>
-  </data>
-  <data name="rbCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="rbCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="rbCheck.Text" xml:space="preserve">
-    <value>Check</value>
-  </data>
-  <data name="&gt;&gt;rbCheck.Name" xml:space="preserve">
-    <value>rbCheck</value>
-  </data>
-  <data name="&gt;&gt;rbCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbCheck.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbCheck.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="rbCredit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbCredit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbCredit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 20</value>
-  </data>
-  <data name="rbCredit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="rbCredit.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="rbCredit.Text" xml:space="preserve">
-    <value>Credit</value>
-  </data>
-  <data name="&gt;&gt;rbCredit.Name" xml:space="preserve">
-    <value>rbCredit</value>
-  </data>
-  <data name="&gt;&gt;rbCredit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbCredit.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbCredit.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="rbCC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbCC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rbCC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 43</value>
-  </data>
-  <data name="rbCC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 17</value>
-  </data>
-  <data name="rbCC.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="rbCC.Text" xml:space="preserve">
-    <value>Credit Card</value>
-  </data>
-  <data name="&gt;&gt;rbCC.Name" xml:space="preserve">
-    <value>rbCC</value>
-  </data>
-  <data name="&gt;&gt;rbCC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbCC.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;rbCC.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ucCC1.Name" xml:space="preserve">
-    <value>ucCC1</value>
-  </data>
-  <data name="&gt;&gt;ucCC1.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCC1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;ucCC1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 143</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Card 1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tcCreditCards</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucCC2.Name" xml:space="preserve">
-    <value>ucCC2</value>
-  </data>
-  <data name="&gt;&gt;ucCC2.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCC2.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;ucCC2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 143</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Card 2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tcCreditCards</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ucCC3.Name" xml:space="preserve">
-    <value>ucCC3</value>
-  </data>
-  <data name="&gt;&gt;ucCC3.Type" xml:space="preserve">
-    <value>QuickBooks.UI.ucCreditCard, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCC3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;ucCC3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 143</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Card 3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tcCreditCards</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="txtSubTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>283, 390</value>
@@ -1966,7 +2278,7 @@
     <value>6, 29</value>
   </data>
   <data name="flpMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>795, 355</value>
+    <value>813, 355</value>
   </data>
   <data name="flpMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2017,7 +2329,7 @@
     <value>False</value>
   </data>
   <data name="txtInvoiceNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>743, 36</value>
+    <value>761, 36</value>
   </data>
   <data name="txtInvoiceNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -2044,7 +2356,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 39</value>
+    <value>667, 39</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 15</value>
@@ -2076,6 +2388,27 @@
   <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>256, 0</value>
   </metadata>
+  <data name="ucCustomerInfo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 44</value>
+  </data>
+  <data name="ucCustomerInfo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 156</value>
+  </data>
+  <data name="ucCustomerInfo1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Name" xml:space="preserve">
+    <value>ucCustomerInfo1</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucCustomerInfo, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucCustomerInfo1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="ucCC1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 7</value>
   </data>
@@ -2139,6 +2472,48 @@
   <data name="&gt;&gt;ucCC3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="ucShippingAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 48</value>
+  </data>
+  <data name="ucShippingAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 134</value>
+  </data>
+  <data name="ucShippingAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Name" xml:space="preserve">
+    <value>ucShippingAddress</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucShippingAddress.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ucBillingAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 48</value>
+  </data>
+  <data name="ucBillingAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 134</value>
+  </data>
+  <data name="ucBillingAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Name" xml:space="preserve">
+    <value>ucBillingAddress</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Type" xml:space="preserve">
+    <value>QuickBooks.UI.ucAddress, QuickBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.Parent" xml:space="preserve">
+    <value>tpCust</value>
+  </data>
+  <data name="&gt;&gt;ucBillingAddress.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2146,7 +2521,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>839, 541</value>
+    <value>857, 541</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>892, 617</value>
@@ -2205,10 +2580,10 @@
   <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;saveToQuickBooksToolStripMenuItem.Name" xml:space="preserve">
-    <value>saveToQuickBooksToolStripMenuItem</value>
+  <data name="&gt;&gt;mnuSaveToQuickBooksToolStripMenuItem.Name" xml:space="preserve">
+    <value>mnuSaveToQuickBooksToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;saveToQuickBooksToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;mnuSaveToQuickBooksToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;printDocument1.Name" xml:space="preserve">

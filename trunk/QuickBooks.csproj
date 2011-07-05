@@ -251,6 +251,7 @@
     <Compile Include="Util\ListItem.cs" />
     <Compile Include="Util\Logger.cs" />
     <Compile Include="Util\PendingOrdersUpdater.cs" />
+    <Compile Include="Util\SalesItemsRepository.cs" />
     <Compile Include="Util\Settings.cs" />
     <Compile Include="Util\Util.cs" />
   </ItemGroup>

@@ -41,6 +41,14 @@ namespace QuickBooks.UI
             ucCC2.SetCardType(Enums.CreditCardType.Visa);
             ucCC3.SetCardType(Enums.CreditCardType.Visa);
             rbCC.Checked = true;
+
+            SetConnectionBasedUi();
+        }
+
+        private void SetConnectionBasedUi()
+        {
+            btnCustLookup.Enabled = _settings.IsConnected;
+            mnuSaveToQuickBooksToolStripMenuItem.Enabled = _settings.IsConnected;
         }
 
         public void Initialize(CustomerOrderObject coo)
@@ -81,6 +89,7 @@ namespace QuickBooks.UI
                 ucLi.SetOrderItem(item);
                 ucLi.DeleteItem += new Action<ucLineItem>(li_DeleteItem);
                 ucLi.TotalOrTaxableChanged += new Action(li_TotalChanged); 
+                ucLi.InsertItem += new Action<ucLineItem>(InsertItem);
             }
             flpMain.Controls.Add(btnAddItem);
             RecalculateTotals();
@@ -199,6 +208,43 @@ namespace QuickBooks.UI
             AddLineItem();
         }
 
+        private void InsertItem(ucLineItem obj)
+        {
+            int iIndex = flpMain.Controls.IndexOf(obj);
+
+            ucLineItem li = ObjectFactory.GetInstance<ucLineItem>();
+
+            li.DeleteItem += new Action<ucLineItem>(li_DeleteItem);
+            li.TotalOrTaxableChanged += new Action(li_TotalChanged);
+            li.InsertItem += new Action<ucLineItem>(InsertItem);
+            li.LoadOrderItems(_orderItems);
+
+            //create the list of controls to be added back in
+            List<Control> addBackIn = new List<Control>();
+            flpMain.Controls.Remove(btnAddItem);
+            for (int i = iIndex + 1; i < flpMain.Controls.Count; i++)
+            {
+                addBackIn.Add(flpMain.Controls[i]);
+                flpMain.Controls.RemoveAt(i);
+                
+            }
+
+            //add the item we want to insert
+            flpMain.Controls.Add(li);
+
+            //add back in the controls that come after inserted control
+            foreach (var item in addBackIn)
+            {
+                flpMain.Controls.Add(item);
+            }
+
+            flpMain.Controls.Add(btnAddItem);
+
+            RecalculateTotals();
+        }
+
+  
+
         private void AddLineItem()
         {
 
@@ -208,11 +254,13 @@ namespace QuickBooks.UI
 
             li.DeleteItem += new Action<ucLineItem>(li_DeleteItem);
             li.TotalOrTaxableChanged += new Action(li_TotalChanged);
-
+            li.InsertItem += new Action<ucLineItem>(InsertItem);
             flpMain.Controls.Remove(btnAddItem);
             flpMain.Controls.Add(li);
             flpMain.Controls.Add(btnAddItem);
         }
+
+
 
         void li_TotalChanged()
         {
@@ -243,6 +291,7 @@ namespace QuickBooks.UI
 
         void li_DeleteItem(ucLineItem obj)
         {
+           
             flpMain.Controls.Remove(obj);
             RecalculateTotals();
         }

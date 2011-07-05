@@ -38,10 +38,12 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToRightPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToQuickBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSaveToQuickBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtOrderDate = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpCust = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbWireTransfer = new System.Windows.Forms.RadioButton();
             this.rbPaypal = new System.Windows.Forms.RadioButton();
@@ -100,8 +102,6 @@
             this.ucCC3 = new QuickBooks.UI.ucCreditCard();
             this.ucShippingAddress = new QuickBooks.UI.ucAddress();
             this.ucBillingAddress = new QuickBooks.UI.ucAddress();
-            this.txtNotes = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCust.SuspendLayout();
@@ -157,7 +157,7 @@
             this.saveToolStripMenuItem,
             this.saveToRightPanelToolStripMenuItem,
             this.toolStripSeparator1,
-            this.saveToQuickBooksToolStripMenuItem});
+            this.mnuSaveToQuickBooksToolStripMenuItem});
             this.testToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
             resources.ApplyResources(this.testToolStripMenuItem, "testToolStripMenuItem");
@@ -179,11 +179,11 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
-            // saveToQuickBooksToolStripMenuItem
+            // mnuSaveToQuickBooksToolStripMenuItem
             // 
-            this.saveToQuickBooksToolStripMenuItem.Name = "saveToQuickBooksToolStripMenuItem";
-            resources.ApplyResources(this.saveToQuickBooksToolStripMenuItem, "saveToQuickBooksToolStripMenuItem");
-            this.saveToQuickBooksToolStripMenuItem.Click += new System.EventHandler(this.saveToQuickBooksToolStripMenuItem_Click);
+            this.mnuSaveToQuickBooksToolStripMenuItem.Name = "mnuSaveToQuickBooksToolStripMenuItem";
+            resources.ApplyResources(this.mnuSaveToQuickBooksToolStripMenuItem, "mnuSaveToQuickBooksToolStripMenuItem");
+            this.mnuSaveToQuickBooksToolStripMenuItem.Click += new System.EventHandler(this.saveToQuickBooksToolStripMenuItem_Click);
             // 
             // dtOrderDate
             // 
@@ -232,6 +232,16 @@
             resources.ApplyResources(this.tpCust, "tpCust");
             this.tpCust.Name = "tpCust";
             this.tpCust.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // txtNotes
+            // 
+            resources.ApplyResources(this.txtNotes, "txtNotes");
+            this.txtNotes.Name = "txtNotes";
             // 
             // groupBox2
             // 
@@ -576,16 +586,6 @@
             resources.ApplyResources(this.ucBillingAddress, "ucBillingAddress");
             this.ucBillingAddress.Name = "ucBillingAddress";
             // 
-            // txtNotes
-            // 
-            resources.ApplyResources(this.txtNotes, "txtNotes");
-            this.txtNotes.Name = "txtNotes";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // frmOrder
             // 
             resources.ApplyResources(this, "$this");
@@ -687,7 +687,7 @@
         private ucCustomerInfo ucCustomerInfo1;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToRightPanelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToQuickBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuSaveToQuickBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuPrint;
         private System.Windows.Forms.ToolStripMenuItem mnuDelete;

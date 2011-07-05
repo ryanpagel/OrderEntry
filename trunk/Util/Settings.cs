@@ -268,5 +268,6 @@ namespace QuickBooks.Util
         }
 
 
+        public bool IsConnected { get; set; }
     }
 }

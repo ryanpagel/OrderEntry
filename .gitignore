@@ -24,3 +24,8 @@
 ###############
 bin/
 obj/
+PendingOrders/
+
+# Other #
+#########
+*.TeamCity.user

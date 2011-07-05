@@ -80,6 +80,8 @@ namespace QuickBooks.UI
 
         public event Action<ucLineItem> DeleteItem;
 
+        public event Action<ucLineItem> InsertItem;
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DeleteItem(this);
@@ -148,6 +150,12 @@ namespace QuickBooks.UI
                 txtPrice.Text = oi.Price.ToString();
             }
             else _logger.Log(string.Format("User selected Item ID '{0}' which was not found in the order form item dictionary.", cboItems.SelectedValue.ToString()));
+        }
+
+        private void btnInsertItem_Click(object sender, EventArgs e)
+        {
+            if (this.InsertItem != null)
+                InsertItem(this);
         }
 
     }

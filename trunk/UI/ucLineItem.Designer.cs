@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbTaxable = new System.Windows.Forms.CheckBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnInsertItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cboItems
@@ -116,7 +117,7 @@
             // btnDelete
             // 
             this.btnDelete.ForeColor = System.Drawing.Color.Red;
-            this.btnDelete.Location = new System.Drawing.Point(756, 0);
+            this.btnDelete.Location = new System.Drawing.Point(747, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(20, 20);
             this.btnDelete.TabIndex = 6;
@@ -124,10 +125,22 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnInsertItem
+            // 
+            this.btnInsertItem.ForeColor = System.Drawing.Color.Green;
+            this.btnInsertItem.Location = new System.Drawing.Point(773, 0);
+            this.btnInsertItem.Name = "btnInsertItem";
+            this.btnInsertItem.Size = new System.Drawing.Size(20, 20);
+            this.btnInsertItem.TabIndex = 9;
+            this.btnInsertItem.Text = "+";
+            this.btnInsertItem.UseVisualStyleBackColor = true;
+            this.btnInsertItem.Click += new System.EventHandler(this.btnInsertItem_Click);
+            // 
             // ucLineItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnInsertItem);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.cbTaxable);
             this.Controls.Add(this.label2);
@@ -138,7 +151,7 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.cboItems);
             this.Name = "ucLineItem";
-            this.Size = new System.Drawing.Size(782, 21);
+            this.Size = new System.Drawing.Size(805, 21);
             this.Load += new System.EventHandler(this.ucLineItem_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,5 +169,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox cbTaxable;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnInsertItem;
     }
 }

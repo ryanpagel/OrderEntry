@@ -22,10 +22,12 @@ namespace QuickBooks.UI
     public partial class frmMain : Form
     {
         ILogger _logger;
-        IQBRepository _qbRepo;
+        QBRepository _qbRepo;
         ISettings _settings;
         frmCustomerSearch _fCustomerSearch;
         IFileSystemRepository _fsRepo;
+        SalesItemsRepository _salesItemsRepository;
+
         Dictionary<string, OrderItem> _orderItems;
 
         FileSet _fileSet;
@@ -45,18 +47,20 @@ namespace QuickBooks.UI
                 return _overBorder && _mouseDown;
             }
         }
-        public frmMain(ILogger logger, IQBRepository qbRepo, ISettings settings, frmCustomerSearch fCustSearch, IFileSystemRepository fsRepo)
+        public frmMain(ILogger logger, QBRepository qbRepo, ISettings settings, frmCustomerSearch fCustSearch, IFileSystemRepository fsRepo, SalesItemsRepository salesItemsRepo)
         {
             InitializeComponent();
 
             try
             {
-
+                
                 _logger = logger;
                 _qbRepo = qbRepo;
                 _settings = settings;
                 _fCustomerSearch = fCustSearch;
                 _fsRepo = fsRepo;
+                _salesItemsRepository = salesItemsRepo;
+
                 _fCustomerSearch.Text = "QuickBooks Customers";
 
                 if (_settings.IsInitialStartup)
@@ -64,13 +68,17 @@ namespace QuickBooks.UI
                     ShowSettingsForm();
                 }
 
-                InitializeFileSystemWatcher();
+                //InitializeFileSystemWatcher();
 
                 LoadCboPendingSince();
+                SetConnectionStatus();
+                ShowConnectionStatus();
 
-                RefreshSalesItems();
-                //_qbRepo.AddExtFields();
+                SetConnectionBasedUiElements();
 
+                CacheSalesItemsFromAppConfigFile();
+
+                
             }
             catch (Exception ex)
             {
@@ -80,7 +88,47 @@ namespace QuickBooks.UI
 
         }
 
-        private void RefreshSalesItems()
+        private void CacheSalesItemsFromAppConfigFile()
+        {
+            _orderItems = this._salesItemsRepository.GetItemsFromDisk().ToDictionary<OrderItem, string>(p => p.ItemID);
+        }
+
+        private void SetConnectionBasedUiElements()
+        {
+            var connected = _settings.IsConnected;
+
+            mnuCustomerSearch.Enabled = connected;
+            mnuExportSalesItemsToDisk.Enabled = connected;
+            
+
+        }
+
+        private void SetConnectionStatus()
+        {
+            _settings.IsConnected = _qbRepo.HasValidConnection();
+
+            
+        }
+
+        private void ShowConnectionStatus()
+        {
+            string msg = "";
+            MessageBoxIcon icon;
+            if (_settings.IsConnected)
+            {
+                msg = "Connected to Quickbooks";
+                icon = MessageBoxIcon.Information;
+            }
+            else
+            {
+                msg = "Could not establish a connection to Quickbooks";
+                icon = MessageBoxIcon.Error;
+            }
+
+            MessageBox.Show(msg, "Connection Status", MessageBoxButtons.OK, icon);
+        }
+
+        private void RefreshSalesItemsCacheFromQuickBooks()
         {
             _orderItems = this._qbRepo.GetAllSalesItems(false).ToDictionary<OrderItem, string>(p => p.ItemID);
         }
@@ -435,7 +483,7 @@ namespace QuickBooks.UI
 
         private void inventoryItemListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RefreshSalesItems();
+            RefreshSalesItemsCacheFromQuickBooks();
             MessageBox.Show("The sales items cache was successfully refreshed.", "Refresh", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
@@ -443,6 +491,13 @@ namespace QuickBooks.UI
         private void processLegacyinvFilesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.CascadeWindows();
+        }
+
+        private void exportSalesItemsToDiskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RefreshSalesItemsCacheFromQuickBooks();
+            var items = _orderItems.Values.ToList();
+            _salesItemsRepository.SaveItemsToDisk(items);
         }
 
 
