@@ -21,6 +21,9 @@ namespace QuickBooks.UI
 {
     public partial class frmMain : Form
     {
+
+        private readonly string sFormTitleText =  "CFI Order Entry";
+
         ILogger _logger;
         QBRepository _qbRepo;
         ISettings _settings;
@@ -72,7 +75,7 @@ namespace QuickBooks.UI
 
                 LoadCboPendingSince();
                 SetConnectionStatus();
-                ShowConnectionStatus();
+                
 
                 SetConnectionBasedUiElements();
 
@@ -121,8 +124,12 @@ namespace QuickBooks.UI
             }
             else
             {
-                msg = "Could not establish a connection to Quickbooks";
-                icon = MessageBoxIcon.Error;
+                msg = "Could not establish a connection to Quickbooks" + 
+                    Environment.NewLine +
+                    "The Order Entry Application will continue in disconnected mode";
+                icon = MessageBoxIcon.Warning;
+
+                this.Text = this.sFormTitleText + " [DISCONNECTED]";
             }
 
             MessageBox.Show(msg, "Connection Status", MessageBoxButtons.OK, icon);
@@ -420,7 +427,7 @@ namespace QuickBooks.UI
 
         private void frmMain_Shown(object sender, EventArgs e)
         {
-
+            ShowConnectionStatus();
         }
 
         private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
@@ -498,6 +505,24 @@ namespace QuickBooks.UI
             RefreshSalesItemsCacheFromQuickBooks();
             var items = _orderItems.Values.ToList();
             _salesItemsRepository.SaveItemsToDisk(items);
+
+            string allItems = "";
+            foreach (var item in items)
+            {
+                allItems += item.ItemName + Environment.NewLine;
+            }
+
+
+            MessageBox.Show("The following Sales Items were exported: " + Environment.NewLine +
+                allItems, "Sales Items Exported", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void mnuOpenProgramFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string myPath = _settings.AppRootPath;
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = myPath;
+            prc.Start();
         }
 
 

@@ -13,6 +13,7 @@ namespace QuickBooks.UI
 {
     public partial class ucLineItem : UserControl
     {
+        
 
         bool _formShown = false;
         Dictionary<string, OrderItem> _orderItems;

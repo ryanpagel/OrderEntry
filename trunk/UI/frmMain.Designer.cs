@@ -45,17 +45,18 @@
             this.mnuRefreshContactsAndPendingOrders = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExportSalesItemsToDisk = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.ucGridLeft = new QuickBooks.UI.ucGrid();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblContacts = new System.Windows.Forms.Label();
             this.cboPendingSince = new System.Windows.Forms.ComboBox();
-            this.ucGridRight = new QuickBooks.UI.ucGrid();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblPendingOrders = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.cmsGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuOpenProgramFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ucGridLeft = new QuickBooks.UI.ucGrid();
+            this.ucGridRight = new QuickBooks.UI.ucGrid();
             this.menuStrip1.SuspendLayout();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -169,7 +170,8 @@
             this.refreshToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventoryItemListToolStripMenuItem,
             this.mnuRefreshContactsAndPendingOrders,
-            this.mnuExportSalesItemsToDisk});
+            this.mnuExportSalesItemsToDisk,
+            this.mnuOpenProgramFolderToolStripMenuItem});
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.refreshToolStripMenuItem.Text = "Misc";
@@ -220,14 +222,6 @@
             this.splitContainer2.SplitterDistance = 252;
             this.splitContainer2.TabIndex = 0;
             // 
-            // ucGridLeft
-            // 
-            this.ucGridLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucGridLeft.Location = new System.Drawing.Point(2, 32);
-            this.ucGridLeft.Name = "ucGridLeft";
-            this.ucGridLeft.Size = new System.Drawing.Size(250, 649);
-            this.ucGridLeft.TabIndex = 4;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblContacts);
@@ -255,14 +249,6 @@
             this.cboPendingSince.Size = new System.Drawing.Size(146, 21);
             this.cboPendingSince.TabIndex = 4;
             this.cboPendingSince.SelectedIndexChanged += new System.EventHandler(this.cboPendingSince_SelectedIndexChanged);
-            // 
-            // ucGridRight
-            // 
-            this.ucGridRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucGridRight.Location = new System.Drawing.Point(0, 32);
-            this.ucGridRight.Name = "ucGridRight";
-            this.ucGridRight.Size = new System.Drawing.Size(244, 649);
-            this.ucGridRight.TabIndex = 4;
             // 
             // panel3
             // 
@@ -311,6 +297,29 @@
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
+            // mnuOpenProgramFolderToolStripMenuItem
+            // 
+            this.mnuOpenProgramFolderToolStripMenuItem.Name = "mnuOpenProgramFolderToolStripMenuItem";
+            this.mnuOpenProgramFolderToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.mnuOpenProgramFolderToolStripMenuItem.Text = "Open Program Folder";
+            this.mnuOpenProgramFolderToolStripMenuItem.Click += new System.EventHandler(this.mnuOpenProgramFolderToolStripMenuItem_Click);
+            // 
+            // ucGridLeft
+            // 
+            this.ucGridLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucGridLeft.Location = new System.Drawing.Point(2, 32);
+            this.ucGridLeft.Name = "ucGridLeft";
+            this.ucGridLeft.Size = new System.Drawing.Size(250, 649);
+            this.ucGridLeft.TabIndex = 4;
+            // 
+            // ucGridRight
+            // 
+            this.ucGridRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucGridRight.Location = new System.Drawing.Point(0, 32);
+            this.ucGridRight.Name = "ucGridRight";
+            this.ucGridRight.Size = new System.Drawing.Size(244, 649);
+            this.ucGridRight.TabIndex = 4;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,7 +332,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QuickBooks";
+            this.Text = "CFI Order Entry";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.menuStrip1.ResumeLayout(false);
@@ -369,6 +378,7 @@
         private System.Windows.Forms.ToolStripMenuItem showLogToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mnuExportSalesItemsToDisk;
+        private System.Windows.Forms.ToolStripMenuItem mnuOpenProgramFolderToolStripMenuItem;
     }
 }
 
