@@ -21,7 +21,6 @@ namespace QuickBooks.UI
 {
     public partial class frmMain : Form
     {
-
         private readonly string sFormTitleText =  "CFI Order Entry";
 
         ILogger _logger;
@@ -38,23 +37,7 @@ namespace QuickBooks.UI
         ucGrid _ucSwatchOrders;
         ucGrid _ucPendingOrders;
         ucGrid _ucContacts;
-        
-        public frmCustomerSearch FCustomerSearch
-        {
-            get { return _fCustomerSearch; }
-            set { _fCustomerSearch = value; }
-        }
 
-        bool _overBorder;
-        bool _mouseDown;
-
-        bool Resizing
-        {
-            get
-            {
-                return _overBorder && _mouseDown;
-            }
-        }
         public frmMain(ILogger logger, QBRepository qbRepo, ISettings settings, frmCustomerSearch fCustSearch, IFileSystemRepository fsRepo, SalesItemsRepository salesItemsRepo)
         {
             InitializeComponent();
@@ -79,11 +62,8 @@ namespace QuickBooks.UI
                     ShowSettingsForm();
                 }
 
-                //InitializeFileSystemWatcher();
-
                 LoadCboPendingSince();
                 SetConnectionStatus();
-                
 
                 SetConnectionBasedUiElements();
 
@@ -167,9 +147,11 @@ namespace QuickBooks.UI
         {
             ucGridContacts.DeleteFileKey += new Action<string,string>(DeleteFileByKey);
             ucGridPendingOrders.DeleteFileKey += new Action<string, string>(DeleteFileByKey);
+            ucSwatches.DeleteFileKey += new Action<string,string>(DeleteFileByKey);
 
             ucGridContacts.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
             ucGridPendingOrders.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
+            ucSwatches.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
         }
 
 
@@ -472,10 +454,6 @@ namespace QuickBooks.UI
             return files;
         }
 
-        private void getInventoryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void mnuRefreshContactsAndPendingOrders_Click(object sender, EventArgs e)
         {
@@ -521,10 +499,7 @@ namespace QuickBooks.UI
             prc.Start();
         }
 
-        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+   
 
         private void mnuSwatchesPanel_Click(object sender, EventArgs e)
         {
@@ -538,12 +513,6 @@ namespace QuickBooks.UI
                 InsertItemIntoFlowLayoutPanel(_ucSwatchOrders, 0);
                 this.mnuSwatchesPanel.Checked = true;
             }
-        }
-        
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
 
