@@ -220,7 +220,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 705);
+            this.panel1.Location = new System.Drawing.Point(0, 856);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1184, 18);
             this.panel1.TabIndex = 1;
@@ -251,51 +251,51 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel1.Controls.Add(this.ucSwatches);
             this.flowLayoutPanel1.Controls.Add(this.ucGridPendingOrders);
             this.flowLayoutPanel1.Controls.Add(this.ucGridContacts);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(512, 24);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(499, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(672, 681);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(685, 832);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.WrapContents = false;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ucSwatches
             // 
-            this.ucSwatches.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucSwatches.Location = new System.Drawing.Point(496, 3);
+            this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucSwatches.Location = new System.Drawing.Point(505, 3);
             this.ucSwatches.Name = "ucSwatches";
             this.ucSwatches.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
-            this.ucSwatches.Size = new System.Drawing.Size(173, 652);
+            this.ucSwatches.Size = new System.Drawing.Size(173, 821);
             this.ucSwatches.TabIndex = 0;
             // 
             // ucGridPendingOrders
             // 
-            this.ucGridPendingOrders.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucGridPendingOrders.Location = new System.Drawing.Point(246, 3);
+            this.ucGridPendingOrders.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucGridPendingOrders.Location = new System.Drawing.Point(255, 3);
             this.ucGridPendingOrders.Name = "ucGridPendingOrders";
             this.ucGridPendingOrders.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.RightPanel;
-            this.ucGridPendingOrders.Size = new System.Drawing.Size(244, 652);
+            this.ucGridPendingOrders.Size = new System.Drawing.Size(244, 821);
             this.ucGridPendingOrders.TabIndex = 4;
             // 
             // ucGridContacts
             // 
-            this.ucGridContacts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucGridContacts.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ucGridContacts.Location = new System.Drawing.Point(3, 3);
             this.ucGridContacts.Name = "ucGridContacts";
             this.ucGridContacts.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.LeftPanel;
-            this.ucGridContacts.Size = new System.Drawing.Size(237, 652);
+            this.ucGridContacts.Size = new System.Drawing.Size(246, 821);
             this.ucGridContacts.TabIndex = 4;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 723);
+            this.ClientSize = new System.Drawing.Size(1184, 874);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
