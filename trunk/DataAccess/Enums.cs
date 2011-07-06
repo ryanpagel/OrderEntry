@@ -10,6 +10,7 @@ namespace QuickBooks.DataAccess
     {
         LeftPanel,
         RightPanel,
+        Swatch,
         NotSet
     }
 }

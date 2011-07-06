@@ -44,27 +44,20 @@
             this.inventoryItemListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRefreshContactsAndPendingOrders = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExportSalesItemsToDisk = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblContacts = new System.Windows.Forms.Label();
+            this.mnuOpenProgramFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cboPendingSince = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblPendingOrders = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.cmsGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuOpenProgramFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ucGridLeft = new QuickBooks.UI.ucGrid();
-            this.ucGridRight = new QuickBooks.UI.ucGrid();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucGridPendingOrders = new QuickBooks.UI.ucGrid();
+            this.ucGrid1 = new QuickBooks.UI.ucGrid();
+            this.ucGridContacts = new QuickBooks.UI.ucGrid();
             this.menuStrip1.SuspendLayout();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.cmsGrid.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -198,74 +191,22 @@
             this.mnuExportSalesItemsToDisk.Text = "Export Sales Items To Disk";
             this.mnuExportSalesItemsToDisk.Click += new System.EventHandler(this.exportSalesItemsToDiskToolStripMenuItem_Click);
             // 
-            // splitContainer2
+            // mnuOpenProgramFolderToolStripMenuItem
             // 
-            this.splitContainer2.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(684, 24);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainer2.Panel1.Controls.Add(this.ucGridLeft);
-            this.splitContainer2.Panel1.Controls.Add(this.panel2);
-            this.splitContainer2.Panel1.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainer2.Panel2.Controls.Add(this.ucGridRight);
-            this.splitContainer2.Panel2.Controls.Add(this.panel3);
-            this.splitContainer2.Size = new System.Drawing.Size(500, 681);
-            this.splitContainer2.SplitterDistance = 252;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblContacts);
-            this.panel2.Controls.Add(this.cboPendingSince);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(2, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 32);
-            this.panel2.TabIndex = 5;
-            // 
-            // lblContacts
-            // 
-            this.lblContacts.Location = new System.Drawing.Point(3, 14);
-            this.lblContacts.Name = "lblContacts";
-            this.lblContacts.Size = new System.Drawing.Size(94, 15);
-            this.lblContacts.TabIndex = 5;
-            this.lblContacts.Text = "Contacts";
+            this.mnuOpenProgramFolderToolStripMenuItem.Name = "mnuOpenProgramFolderToolStripMenuItem";
+            this.mnuOpenProgramFolderToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.mnuOpenProgramFolderToolStripMenuItem.Text = "Open Program Folder";
+            this.mnuOpenProgramFolderToolStripMenuItem.Click += new System.EventHandler(this.mnuOpenProgramFolderToolStripMenuItem_Click);
             // 
             // cboPendingSince
             // 
             this.cboPendingSince.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPendingSince.FormattingEnabled = true;
-            this.cboPendingSince.Location = new System.Drawing.Point(103, 8);
+            this.cboPendingSince.Location = new System.Drawing.Point(47, 100);
             this.cboPendingSince.Name = "cboPendingSince";
             this.cboPendingSince.Size = new System.Drawing.Size(146, 21);
             this.cboPendingSince.TabIndex = 4;
             this.cboPendingSince.SelectedIndexChanged += new System.EventHandler(this.cboPendingSince_SelectedIndexChanged);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.lblPendingOrders);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(244, 32);
-            this.panel3.TabIndex = 5;
-            // 
-            // lblPendingOrders
-            // 
-            this.lblPendingOrders.Location = new System.Drawing.Point(3, 14);
-            this.lblPendingOrders.Name = "lblPendingOrders";
-            this.lblPendingOrders.Size = new System.Drawing.Size(95, 15);
-            this.lblPendingOrders.TabIndex = 5;
-            this.lblPendingOrders.Text = "Pending Orders";
             // 
             // panel1
             // 
@@ -297,37 +238,51 @@
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
-            // mnuOpenProgramFolderToolStripMenuItem
+            // flowLayoutPanel1
             // 
-            this.mnuOpenProgramFolderToolStripMenuItem.Name = "mnuOpenProgramFolderToolStripMenuItem";
-            this.mnuOpenProgramFolderToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.mnuOpenProgramFolderToolStripMenuItem.Text = "Open Program Folder";
-            this.mnuOpenProgramFolderToolStripMenuItem.Click += new System.EventHandler(this.mnuOpenProgramFolderToolStripMenuItem_Click);
+            this.flowLayoutPanel1.Controls.Add(this.ucGridPendingOrders);
+            this.flowLayoutPanel1.Controls.Add(this.ucGrid1);
+            this.flowLayoutPanel1.Controls.Add(this.ucGridContacts);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(437, 24);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(747, 681);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // ucGridLeft
+            // ucGridPendingOrders
             // 
-            this.ucGridLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucGridLeft.Location = new System.Drawing.Point(2, 32);
-            this.ucGridLeft.Name = "ucGridLeft";
-            this.ucGridLeft.Size = new System.Drawing.Size(250, 649);
-            this.ucGridLeft.TabIndex = 4;
+            this.ucGridPendingOrders.Location = new System.Drawing.Point(500, 3);
+            this.ucGridPendingOrders.Name = "ucGridPendingOrders";
+            this.ucGridPendingOrders.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.RightPanel;
+            this.ucGridPendingOrders.Size = new System.Drawing.Size(244, 649);
+            this.ucGridPendingOrders.TabIndex = 4;
             // 
-            // ucGridRight
+            // ucGrid1
             // 
-            this.ucGridRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucGridRight.Location = new System.Drawing.Point(0, 32);
-            this.ucGridRight.Name = "ucGridRight";
-            this.ucGridRight.Size = new System.Drawing.Size(244, 649);
-            this.ucGridRight.TabIndex = 4;
+            this.ucGrid1.Location = new System.Drawing.Point(261, 3);
+            this.ucGrid1.Name = "ucGrid1";
+            this.ucGrid1.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
+            this.ucGrid1.Size = new System.Drawing.Size(233, 652);
+            this.ucGrid1.TabIndex = 0;
+            // 
+            // ucGridContacts
+            // 
+            this.ucGridContacts.Location = new System.Drawing.Point(5, 3);
+            this.ucGridContacts.Name = "ucGridContacts";
+            this.ucGridContacts.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.LeftPanel;
+            this.ucGridContacts.Size = new System.Drawing.Size(250, 649);
+            this.ucGridContacts.TabIndex = 4;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 723);
-            this.Controls.Add(this.splitContainer2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.cboPendingSince);
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
@@ -337,13 +292,9 @@
             this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.cmsGrid.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,18 +308,13 @@
         private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuPartialOrders;
         private System.Windows.Forms.ToolStripMenuItem mnuFullOrders;
-        private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cboPendingSince;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.ContextMenuStrip cmsGrid;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private ucGrid ucGridLeft;
-        private ucGrid ucGridRight;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblContacts;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblPendingOrders;
+        private ucGrid ucGridContacts;
+        private ucGrid ucGridPendingOrders;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inventoryItemListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuRefreshContactsAndPendingOrders;
@@ -379,6 +325,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mnuExportSalesItemsToDisk;
         private System.Windows.Forms.ToolStripMenuItem mnuOpenProgramFolderToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private ucGrid ucGrid1;
     }
 }
 

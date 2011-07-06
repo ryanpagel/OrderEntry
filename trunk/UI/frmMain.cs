@@ -157,11 +157,11 @@ namespace QuickBooks.UI
 
         void WireupGridViewEvents()
         {
-            ucGridLeft.DeleteFileKey += new Action<string,string>(DeleteFileByKey);
-            ucGridRight.DeleteFileKey += new Action<string, string>(DeleteFileByKey);
+            ucGridContacts.DeleteFileKey += new Action<string,string>(DeleteFileByKey);
+            ucGridPendingOrders.DeleteFileKey += new Action<string, string>(DeleteFileByKey);
 
-            ucGridLeft.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
-            ucGridRight.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
+            ucGridContacts.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
+            ucGridPendingOrders.OpenOrderByKey += new Action<string>(DisplayPendingOrderByKey);
         }
 
 
@@ -213,13 +213,18 @@ namespace QuickBooks.UI
 
         void LoadPanels()
         {
-            var leftPanel = SearchLeftPanelFiles();
+            var contactsPanel = SearchContactsPanelFiles();
 
-            var rightPanel = from o in _fileSet.Values
+            var pendingOrdersPanel = from o in _fileSet.Values
                              where o.SaveLocation == PendingOrderSaveLocation.RightPanel
                              select o;
-            ucGridLeft.SetDatasource(leftPanel.ToList());
-            ucGridRight.SetDatasource(rightPanel.ToList());
+
+            var swatchPanel = from o in _fileSet.Values
+                              where o.SaveLocation == PendingOrderSaveLocation.Swatch
+                              select o;
+
+            ucGridContacts.SetDatasource(contactsPanel.ToList());
+            ucGridPendingOrders.SetDatasource(pendingOrdersPanel.ToList());
 
             SetLeftGridviewRowCountLabel();
             SetRightGridviewRowCountLabel();
@@ -227,12 +232,12 @@ namespace QuickBooks.UI
 
         private void SetLeftGridviewRowCountLabel()
         {
-            lblContacts.Text = string.Format("Contacts ({0})", ucGridLeft.Rows);
+            lblContacts.Text = string.Format("Contacts ({0})", ucGridContacts.Rows);
             
         }
         void SetRightGridviewRowCountLabel()
         {
-            lblPendingOrders.Text = string.Format("Pending Orders ({0})", ucGridRight.Rows);
+            //lblPendingOrders.Text = string.Format("Pending Orders ({0})", ucGridPendingOrders.Rows);
         }
 
         
@@ -464,12 +469,12 @@ namespace QuickBooks.UI
 
         private void cboPendingSince_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var files = SearchLeftPanelFiles();
-            ucGridLeft.SetDatasource(files);
+            var files = SearchContactsPanelFiles();
+            ucGridContacts.SetDatasource(files);
             SetLeftGridviewRowCountLabel();
         }
 
-        private List<PendingOrderFile> SearchLeftPanelFiles()
+        private List<PendingOrderFile> SearchContactsPanelFiles()
         {
             var dt = (DateTime)(((ListItem)cboPendingSince.SelectedItem).Value);
             var files = SearchFiles(dt, PendingOrderSaveLocation.LeftPanel);
@@ -523,6 +528,11 @@ namespace QuickBooks.UI
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
             prc.StartInfo.FileName = myPath;
             prc.Start();
+        }
+
+        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 

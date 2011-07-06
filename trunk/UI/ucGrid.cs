@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using QuickBooks.BusObj;
+using QuickBooks.DataAccess;
 
 namespace QuickBooks.UI
 {
@@ -17,6 +18,8 @@ namespace QuickBooks.UI
             InitializeComponent();
             gvMain.AutoGenerateColumns = false;
         }
+
+        public PendingOrderSaveLocation SaveLocation { get; set; }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -60,6 +63,16 @@ namespace QuickBooks.UI
         public int Rows
         {
             get { return gvMain.Rows.Count; }
+        }
+
+        private void ucGrid_Load(object sender, EventArgs e)
+        {
+            if (this.SaveLocation == PendingOrderSaveLocation.LeftPanel)
+                lblTitle.Text = "Contacts";
+            else if (this.SaveLocation == PendingOrderSaveLocation.RightPanel)
+                lblTitle.Text = "Pending Order";
+            else if (this.SaveLocation == PendingOrderSaveLocation.Swatch)
+                lblTitle.Text = "Swatch Order";
         }
 
     }
