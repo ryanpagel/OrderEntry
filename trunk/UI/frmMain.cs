@@ -34,6 +34,11 @@ namespace QuickBooks.UI
         Dictionary<string, OrderItem> _orderItems;
 
         FileSet _fileSet;
+
+        ucGrid _ucSwatchOrders;
+        ucGrid _ucPendingOrders;
+        ucGrid _ucContacts;
+        
         public frmCustomerSearch FCustomerSearch
         {
             get { return _fCustomerSearch; }
@@ -56,7 +61,10 @@ namespace QuickBooks.UI
 
             try
             {
-                
+                _ucContacts = ucGridContacts;
+                _ucSwatchOrders = ucSwatches;
+                _ucPendingOrders = _ucPendingOrders;
+
                 _logger = logger;
                 _qbRepo = qbRepo;
                 _settings = settings;
@@ -192,8 +200,8 @@ namespace QuickBooks.UI
                 //fSplash.Show();
                 //Thread.Sleep(1000);
                 //fSplash.Close();
-                mnuPartialOrders.Checked = true;
-                mnuFullOrders.Checked = true;
+                mnuContactsPanel.Checked = true;
+                mnuPendingOrdersPanel.Checked = true;
                 this.IsMdiContainer = true;
                 _fileSet = _fsRepo.GetPendingOrderFileSet(true);
                 LoadPanels();
@@ -232,7 +240,7 @@ namespace QuickBooks.UI
 
         private void SetLeftGridviewRowCountLabel()
         {
-            lblContacts.Text = string.Format("Contacts ({0})", ucGridContacts.Rows);
+            //lblContacts.Text = string.Format("Contacts ({0})", ucGridContacts.Rows);
             
         }
         void SetRightGridviewRowCountLabel()
@@ -299,77 +307,96 @@ namespace QuickBooks.UI
             fOrder.Show();
         }
 
-        private void mnuLeftPanel_Click(object sender, EventArgs e)
+        private void InsertItemIntoFlowLayoutPanel(Control obj, int idx)
         {
-            if (mnuPartialOrders.Checked)
+         
+
+            List<Control> addBackIn = new List<Control>();
+            int itemsCount = this.flowLayoutPanel1.Controls.Count;
+            for (int i = itemsCount -1 ; i >=idx; i--)
             {
-                //hiding the panel
-                splitContainer2.Panel1Collapsed = true;
-                mnuPartialOrders.Checked = false;
-                SubtractPanel();
+                addBackIn.Add(this.flowLayoutPanel1.Controls[i]);
+                this.flowLayoutPanel1.Controls.RemoveAt(i);
+            }
+
+            //add the item we want to insert
+            this.flowLayoutPanel1.Controls.Add(obj);
+
+            //add back in the controls that come after inserted control
+            addBackIn.Reverse();
+            foreach (var item in addBackIn)
+            {
+                this.flowLayoutPanel1.Controls.Add(item);
+            }
+        }
+
+        private void mnuContactsPanel_Click(object sender, EventArgs e)
+        {
+            if (mnuContactsPanel.Checked)
+            {
+                flowLayoutPanel1.Controls.Remove(_ucContacts);
+                flowLayoutPanel1.Refresh();
+                mnuContactsPanel.Checked = false;
             }
             else
             {
                 //show the panel
-                splitContainer2.Panel1Collapsed = false;
-                mnuPartialOrders.Checked = true;
-                AddLeftPanel();
+                InsertItemIntoFlowLayoutPanel(_ucContacts, 2);
+                mnuContactsPanel.Checked = true;
             }
         }
 
         private void mnuRightPanel_Click(object sender, EventArgs e)
         {
-            if (mnuFullOrders.Checked)
-            {
-                //hiding the panel
-                splitContainer2.Panel2Collapsed = true;
-                mnuFullOrders.Checked = false;
-                SubtractPanel();
-            }
-            else
-            {
-                //show the panel
-                splitContainer2.Panel2Collapsed = false;
-                mnuFullOrders.Checked = true;
-                AddRightPanel();
-            }
+            //if (mnuFullOrders.Checked)
+            //{
+            //    //hiding the panel
+            //    mnuFullOrders.Checked = false;
+            //    SubtractPanel();
+            //}
+            //else
+            //{
+            //    //show the panel
+            //    mnuFullOrders.Checked = true;
+            //    AddRightPanel();
+            //}
         }
 
-        void AddLeftPanel()
-        {
-            if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
-                splitContainer2.Width = splitContainer2.Width * 2;
-            else
-            {
-                splitContainer2.Visible = true;
-                splitContainer2.Width = 250;
-                splitContainer2.Panel2Collapsed = true;
-            }
-        }
+        //void AddLeftPanel()
+        //{
+        //    if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
+        //        splitContainer2.Width = splitContainer2.Width * 2;
+        //    else
+        //    {
+        //        splitContainer2.Visible = true;
+        //        splitContainer2.Width = 250;
+        //        splitContainer2.Panel2Collapsed = true;
+        //    }
+        //}
 
-        void AddRightPanel()
-        {
-            if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
-                splitContainer2.Width = splitContainer2.Width * 2;
-            else
-            {
-                splitContainer2.Visible = true;
-                splitContainer2.Width = 250;
-                splitContainer2.Panel1Collapsed = true;
-            }
-        }
+        //void AddRightPanel()
+        //{
+        //    if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
+        //        splitContainer2.Width = splitContainer2.Width * 2;
+        //    else
+        //    {
+        //        splitContainer2.Visible = true;
+        //        splitContainer2.Width = 250;
+        //        splitContainer2.Panel1Collapsed = true;
+        //    }
+        //}
 
-        void SubtractPanel()
-        {
-            if (!mnuPartialOrders.Checked && !mnuFullOrders.Checked)
-                splitContainer2.Visible = false;
-            else
-            {
-                splitContainer2.Width = splitContainer2.Width / 2;
-            }
+        //void SubtractPanel()
+        //{
+        //    if (!mnuPartialOrders.Checked && !mnuFullOrders.Checked)
+        //        splitContainer2.Visible = false;
+        //    else
+        //    {
+        //        splitContainer2.Width = splitContainer2.Width / 2;
+        //    }
                 
             
-        }
+        //}
 
         private void viewCurrentCustomersToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -531,6 +558,11 @@ namespace QuickBooks.UI
         }
 
         private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mnuSwatchesPanel_Click(object sender, EventArgs e)
         {
 
         }
