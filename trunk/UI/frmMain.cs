@@ -63,7 +63,7 @@ namespace QuickBooks.UI
             {
                 _ucContacts = ucGridContacts;
                 _ucSwatchOrders = ucSwatches;
-                _ucPendingOrders = _ucPendingOrders;
+                _ucPendingOrders = ucGridPendingOrders;
 
                 _logger = logger;
                 _qbRepo = qbRepo;
@@ -202,6 +202,7 @@ namespace QuickBooks.UI
                 //fSplash.Close();
                 mnuContactsPanel.Checked = true;
                 mnuPendingOrdersPanel.Checked = true;
+                mnuSwatchesPanel.Checked = true;
                 this.IsMdiContainer = true;
                 _fileSet = _fsRepo.GetPendingOrderFileSet(true);
                 LoadPanels();
@@ -348,55 +349,18 @@ namespace QuickBooks.UI
 
         private void mnuRightPanel_Click(object sender, EventArgs e)
         {
-            //if (mnuFullOrders.Checked)
-            //{
-            //    //hiding the panel
-            //    mnuFullOrders.Checked = false;
-            //    SubtractPanel();
-            //}
-            //else
-            //{
-            //    //show the panel
-            //    mnuFullOrders.Checked = true;
-            //    AddRightPanel();
-            //}
+            if (mnuPendingOrdersPanel.Checked)
+            {
+                flowLayoutPanel1.Controls.Remove(_ucPendingOrders);
+                flowLayoutPanel1.Refresh();
+                mnuPendingOrdersPanel.Checked = false;
+            }
+            else
+            {
+                InsertItemIntoFlowLayoutPanel(_ucPendingOrders, 1);
+                mnuPendingOrdersPanel.Checked = true;
+            }
         }
-
-        //void AddLeftPanel()
-        //{
-        //    if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
-        //        splitContainer2.Width = splitContainer2.Width * 2;
-        //    else
-        //    {
-        //        splitContainer2.Visible = true;
-        //        splitContainer2.Width = 250;
-        //        splitContainer2.Panel2Collapsed = true;
-        //    }
-        //}
-
-        //void AddRightPanel()
-        //{
-        //    if (mnuFullOrders.Checked && mnuPartialOrders.Checked)
-        //        splitContainer2.Width = splitContainer2.Width * 2;
-        //    else
-        //    {
-        //        splitContainer2.Visible = true;
-        //        splitContainer2.Width = 250;
-        //        splitContainer2.Panel1Collapsed = true;
-        //    }
-        //}
-
-        //void SubtractPanel()
-        //{
-        //    if (!mnuPartialOrders.Checked && !mnuFullOrders.Checked)
-        //        splitContainer2.Visible = false;
-        //    else
-        //    {
-        //        splitContainer2.Width = splitContainer2.Width / 2;
-        //    }
-                
-            
-        //}
 
         private void viewCurrentCustomersToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -564,8 +528,18 @@ namespace QuickBooks.UI
 
         private void mnuSwatchesPanel_Click(object sender, EventArgs e)
         {
-
+            if (this.mnuSwatchesPanel.Checked)
+            {
+                flowLayoutPanel1.Controls.Remove(_ucSwatchOrders);
+                this.mnuSwatchesPanel.Checked = false;
+            }
+            else
+            {
+                InsertItemIntoFlowLayoutPanel(_ucSwatchOrders, 0);
+                this.mnuSwatchesPanel.Checked = true;
+            }
         }
+        
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {

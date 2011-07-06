@@ -148,6 +148,8 @@
             // 
             // mnuContactsPanel
             // 
+            this.mnuContactsPanel.Checked = true;
+            this.mnuContactsPanel.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuContactsPanel.Name = "mnuContactsPanel";
             this.mnuContactsPanel.Size = new System.Drawing.Size(211, 22);
             this.mnuContactsPanel.Text = "Contacts Panel";
@@ -155,6 +157,8 @@
             // 
             // mnuPendingOrdersPanel
             // 
+            this.mnuPendingOrdersPanel.Checked = true;
+            this.mnuPendingOrdersPanel.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuPendingOrdersPanel.Name = "mnuPendingOrdersPanel";
             this.mnuPendingOrdersPanel.Size = new System.Drawing.Size(211, 22);
             this.mnuPendingOrdersPanel.Text = "Pending Orders Panel";
@@ -162,6 +166,8 @@
             // 
             // mnuSwatchesPanel
             // 
+            this.mnuSwatchesPanel.Checked = true;
+            this.mnuSwatchesPanel.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuSwatchesPanel.Name = "mnuSwatchesPanel";
             this.mnuSwatchesPanel.Size = new System.Drawing.Size(211, 22);
             this.mnuSwatchesPanel.Text = "Swatches Panel";
@@ -251,15 +257,14 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel1.Controls.Add(this.ucSwatches);
             this.flowLayoutPanel1.Controls.Add(this.ucGridPendingOrders);
             this.flowLayoutPanel1.Controls.Add(this.ucGridContacts);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(499, 24);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(416, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(685, 832);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(768, 832);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.WrapContents = false;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
@@ -267,19 +272,19 @@
             // ucSwatches
             // 
             this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ucSwatches.Location = new System.Drawing.Point(505, 3);
+            this.ucSwatches.Location = new System.Drawing.Point(515, 3);
             this.ucSwatches.Name = "ucSwatches";
             this.ucSwatches.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
-            this.ucSwatches.Size = new System.Drawing.Size(173, 821);
+            this.ucSwatches.Size = new System.Drawing.Size(250, 821);
             this.ucSwatches.TabIndex = 0;
             // 
             // ucGridPendingOrders
             // 
             this.ucGridPendingOrders.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ucGridPendingOrders.Location = new System.Drawing.Point(255, 3);
+            this.ucGridPendingOrders.Location = new System.Drawing.Point(259, 3);
             this.ucGridPendingOrders.Name = "ucGridPendingOrders";
             this.ucGridPendingOrders.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.RightPanel;
-            this.ucGridPendingOrders.Size = new System.Drawing.Size(244, 821);
+            this.ucGridPendingOrders.Size = new System.Drawing.Size(250, 821);
             this.ucGridPendingOrders.TabIndex = 4;
             // 
             // ucGridContacts
@@ -288,7 +293,7 @@
             this.ucGridContacts.Location = new System.Drawing.Point(3, 3);
             this.ucGridContacts.Name = "ucGridContacts";
             this.ucGridContacts.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.LeftPanel;
-            this.ucGridContacts.Size = new System.Drawing.Size(246, 821);
+            this.ucGridContacts.Size = new System.Drawing.Size(250, 821);
             this.ucGridContacts.TabIndex = 4;
             // 
             // frmMain
