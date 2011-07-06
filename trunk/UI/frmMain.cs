@@ -234,7 +234,7 @@ namespace QuickBooks.UI
 
             ucGridContacts.SetDatasource(contactsPanel.ToList());
             ucGridPendingOrders.SetDatasource(pendingOrdersPanel.ToList());
-
+            ucSwatches.SetDatasource(swatchPanel.ToList());
             SetLeftGridviewRowCountLabel();
             SetRightGridviewRowCountLabel();
         }

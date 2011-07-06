@@ -586,6 +586,11 @@ namespace QuickBooks.UI
             _fsRepo.DeletePendingOrderByKey(_fileKey);
             this.Close();
         }
+
+        private void mnuSaveAsSwatchOrder_Click(object sender, EventArgs e)
+        {
+            GetCustomerOrderAndSaveFile(PendingOrderSaveLocation.Swatch);
+        }
         
 
     }

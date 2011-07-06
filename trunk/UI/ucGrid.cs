@@ -70,9 +70,9 @@ namespace QuickBooks.UI
             if (this.SaveLocation == PendingOrderSaveLocation.LeftPanel)
                 lblTitle.Text = "Contacts";
             else if (this.SaveLocation == PendingOrderSaveLocation.RightPanel)
-                lblTitle.Text = "Pending Order";
+                lblTitle.Text = "Pending Orders";
             else if (this.SaveLocation == PendingOrderSaveLocation.Swatch)
-                lblTitle.Text = "Swatch Order";
+                lblTitle.Text = "Swatch Orders";
         }
 
     }

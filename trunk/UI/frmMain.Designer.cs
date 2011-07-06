@@ -217,10 +217,11 @@
             // 
             this.cboPendingSince.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPendingSince.FormattingEnabled = true;
-            this.cboPendingSince.Location = new System.Drawing.Point(47, 100);
+            this.cboPendingSince.Location = new System.Drawing.Point(122, 121);
             this.cboPendingSince.Name = "cboPendingSince";
             this.cboPendingSince.Size = new System.Drawing.Size(146, 21);
             this.cboPendingSince.TabIndex = 4;
+            this.cboPendingSince.Visible = false;
             this.cboPendingSince.SelectedIndexChanged += new System.EventHandler(this.cboPendingSince_SelectedIndexChanged);
             // 
             // panel1
