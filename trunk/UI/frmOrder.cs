@@ -596,6 +596,10 @@ namespace QuickBooks.UI
                 return;
 
             _fsRepo.DeletePendingOrderByKey(_fileKey);
+
+            if (this.RefreshSpecifiedPanel != null)
+                RefreshSpecifiedPanel(PendingOrderSaveLocation.NotSet);
+
             this.Close();
         }
 
