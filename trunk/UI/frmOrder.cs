@@ -184,6 +184,8 @@ namespace QuickBooks.UI
                 saveLoc = "Contact";
             else if (_saveLocation == PendingOrderSaveLocation.RightPanel)
                 saveLoc = "Pending Order";
+            else if (_saveLocation == PendingOrderSaveLocation.Swatch)
+                saveLoc = "Swatch Order";
 
             if (saveLoc != "")
                 this.Text = string.Format("{0} ({1})", obj, saveLoc);
@@ -422,6 +424,8 @@ namespace QuickBooks.UI
             GetCustomerOrderAndSaveFile(PendingOrderSaveLocation.LeftPanel);
         }
 
+        public event Action<PendingOrderSaveLocation> RefreshSpecifiedPanel;
+
         private void GetCustomerOrderAndSaveFile(PendingOrderSaveLocation saveLocation)
         {
             if (string.IsNullOrEmpty(ucCustomerInfo1.FullName))
@@ -438,6 +442,10 @@ namespace QuickBooks.UI
             MessageBox.Show(
                 string.Format("{0} - order successfully saved to disk.", coo.Customer.FullName),
                 "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (RefreshSpecifiedPanel != null)
+                RefreshSpecifiedPanel(saveLocation);
+
             this.Close();
         }
 
@@ -560,6 +568,10 @@ namespace QuickBooks.UI
 
                 if (this._isPreExistingOrder)
                     _fsRepo.DeletePendingOrderByKey(_fileKey);
+
+                if (this.RefreshSpecifiedPanel != null)
+                    RefreshSpecifiedPanel(PendingOrderSaveLocation.NotSet);
+
                 this.Close();
 
             }

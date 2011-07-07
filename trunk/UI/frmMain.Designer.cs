@@ -187,7 +187,7 @@
             // inventoryItemListToolStripMenuItem
             // 
             this.inventoryItemListToolStripMenuItem.Name = "inventoryItemListToolStripMenuItem";
-            this.inventoryItemListToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.inventoryItemListToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.inventoryItemListToolStripMenuItem.Text = "QuickBooks Item List";
             this.inventoryItemListToolStripMenuItem.Visible = false;
             this.inventoryItemListToolStripMenuItem.Click += new System.EventHandler(this.inventoryItemListToolStripMenuItem_Click);
@@ -195,21 +195,21 @@
             // mnuRefreshContactsAndPendingOrders
             // 
             this.mnuRefreshContactsAndPendingOrders.Name = "mnuRefreshContactsAndPendingOrders";
-            this.mnuRefreshContactsAndPendingOrders.Size = new System.Drawing.Size(273, 22);
-            this.mnuRefreshContactsAndPendingOrders.Text = "Refresh Contacts And Pending Orders";
+            this.mnuRefreshContactsAndPendingOrders.Size = new System.Drawing.Size(188, 22);
+            this.mnuRefreshContactsAndPendingOrders.Text = "Refresh Panels";
             this.mnuRefreshContactsAndPendingOrders.Click += new System.EventHandler(this.mnuRefreshContactsAndPendingOrders_Click);
             // 
             // mnuExportSalesItemsToDisk
             // 
             this.mnuExportSalesItemsToDisk.Name = "mnuExportSalesItemsToDisk";
-            this.mnuExportSalesItemsToDisk.Size = new System.Drawing.Size(273, 22);
-            this.mnuExportSalesItemsToDisk.Text = "Export Sales Items To Disk";
+            this.mnuExportSalesItemsToDisk.Size = new System.Drawing.Size(188, 22);
+            this.mnuExportSalesItemsToDisk.Text = "Export Sales Items";
             this.mnuExportSalesItemsToDisk.Click += new System.EventHandler(this.exportSalesItemsToDiskToolStripMenuItem_Click);
             // 
             // mnuOpenProgramFolderToolStripMenuItem
             // 
             this.mnuOpenProgramFolderToolStripMenuItem.Name = "mnuOpenProgramFolderToolStripMenuItem";
-            this.mnuOpenProgramFolderToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.mnuOpenProgramFolderToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.mnuOpenProgramFolderToolStripMenuItem.Text = "Open Program Folder";
             this.mnuOpenProgramFolderToolStripMenuItem.Click += new System.EventHandler(this.mnuOpenProgramFolderToolStripMenuItem_Click);
             // 

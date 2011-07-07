@@ -177,11 +177,13 @@ namespace QuickBooks.UI
                 this.WindowState = FormWindowState.Maximized;
 
                 _logger.Log("Application starting up...");
+
                 //frmSplash fSplash = new frmSplash();
                 //Application.DoEvents();
                 //fSplash.Show();
                 //Thread.Sleep(1000);
                 //fSplash.Close();
+
                 mnuContactsPanel.Checked = true;
                 mnuPendingOrdersPanel.Checked = true;
                 mnuSwatchesPanel.Checked = true;
@@ -189,10 +191,6 @@ namespace QuickBooks.UI
                 _fileSet = _fsRepo.GetPendingOrderFileSet(true);
                 LoadPanels();
                 WireupGridViewEvents();
-
-                //frmOrder fOrder = ObjectFactory.GetInstance<frmOrder>();
-                //fOrder.MdiParent = this;
-                //fOrder.Show();
             }
             catch (Exception ex)
             {
@@ -231,30 +229,6 @@ namespace QuickBooks.UI
             //lblPendingOrders.Text = string.Format("Pending Orders ({0})", ucGridPendingOrders.Rows);
         }
 
-        
-
-        //private void processLegacyinvFilesToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    PendingOrdersUpdater pou = ObjectFactory.GetInstance<PendingOrdersUpdater>();
-
-        //    List<CustomerOrderObject> orders = new List<CustomerOrderObject>();
-            
-        //    var result = Directory.GetFileSystemEntries(Environment.CurrentDirectory + "\\LegacyData", "*.inv");
-
-        //    foreach (var file in result)
-        //    {
-        //        Stream s = File.OpenRead(file);
-        //        BinaryFormatter b = new BinaryFormatter();
-        //        OrderForm of = (OrderForm)b.Deserialize(s);
-        //        s.Close();
-
-        //        var order = pou.GetOrderFromForm(of);
-        //        orders.Add(order);
-        //    }
-     
-        //}
-
-
         private void logToolStripMenuItem_Click(object sender, EventArgs e)
         {
             XmlSerializer s = new XmlSerializer(typeof(CustomerOrderObject));
@@ -285,6 +259,7 @@ namespace QuickBooks.UI
         private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmOrder fOrder = ObjectFactory.GetInstance<frmOrder>();
+            fOrder.RefreshSpecifiedPanel += new Action<PendingOrderSaveLocation>(RefreshSpecifiedPanel);
             fOrder.SetSalesItems(_orderItems);
             fOrder.MdiParent = this;
             fOrder.Show();
@@ -370,12 +345,19 @@ namespace QuickBooks.UI
             this.Cursor = Cursors.WaitCursor;
             var coo = _fsRepo.GetPendingOrderByKey(fileKey);
             frmOrder fOrder = ObjectFactory.GetInstance<frmOrder>();
+            fOrder.RefreshSpecifiedPanel += new Action<PendingOrderSaveLocation>(RefreshSpecifiedPanel);
             fOrder.SetSalesItems(_orderItems);
             fOrder.MdiParent = this;
             fOrder.Show();
             fOrder.Initialize(coo);
             
             this.Cursor = Cursors.Default;
+        }
+
+        void RefreshSpecifiedPanel(PendingOrderSaveLocation obj)
+        {
+            //currently refreshing all panels;  this could be refactored for performance
+            RefreshPanels();
         }
 
         private void processLegacyinvFilesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -457,9 +439,15 @@ namespace QuickBooks.UI
 
         private void mnuRefreshContactsAndPendingOrders_Click(object sender, EventArgs e)
         {
-            _fileSet =  _fsRepo.GetPendingOrderFileSet(true);
+            RefreshPanels();
+
+            MessageBox.Show("All panels successfully refreshed.", "Refresh", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void RefreshPanels()
+        {
+            _fileSet = _fsRepo.GetPendingOrderFileSet(true);
             LoadPanels();
-            MessageBox.Show("Contacts and pending orders successfully refreshed.", "Refresh", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void inventoryItemListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -478,6 +466,14 @@ namespace QuickBooks.UI
         {
             RefreshSalesItemsCacheFromQuickBooks();
             var items = _orderItems.Values.ToList();
+
+            //prevent overwriting the sales items in case the cache is empty
+            if (items.Count == 0)
+            {
+                MessageBox.Show("Cannot save Sales Items.  There are currently 0 items in the cache.", "Cannot Save",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+                        
             _salesItemsRepository.SaveItemsToDisk(items);
 
             string allItems = "";
