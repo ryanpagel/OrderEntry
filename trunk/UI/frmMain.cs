@@ -63,7 +63,8 @@ namespace QuickBooks.UI
                 }
 
                 LoadCboPendingSince();
-                SetConnectionStatus();
+
+                TestForQuickBooksConnection();
 
                 SetConnectionBasedUiElements();
 
@@ -94,11 +95,19 @@ namespace QuickBooks.UI
 
         }
 
-        private void SetConnectionStatus()
+        private void TestForQuickBooksConnection()
         {
             _settings.IsConnected = _qbRepo.HasValidConnection();
+        }
 
-            
+        private void SetDefaultCursor()
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+        private void SetWaitCursor()
+        {
+            this.Cursor = Cursors.WaitCursor;
         }
 
         private void ShowConnectionStatus()

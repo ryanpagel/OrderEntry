@@ -8,6 +8,6 @@ Upgrade Notes:
 [ServerDataRootDir]/Pending Files
 [ServerDataRootDir]/QBSalesItems/SalesItems.xml
 
-2. The config file will need to be updated on all clients to no longer point at the PendingFiles dir but rather the ServerDataRootDir.
+2. The config item PendingFilesDir has been replaced with ServerDataRootDir.  This item will need to be updated on all clients.
 
 
