@@ -43,7 +43,7 @@
             this.btnBrowseQBFile = new System.Windows.Forms.Button();
             this.btnBrowseAppRoot = new System.Windows.Forms.Button();
             this.ofdQBFile = new System.Windows.Forms.OpenFileDialog();
-            this.txtPendingOrdersDir = new System.Windows.Forms.TextBox();
+            this.txtServerRootDirectory = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPendingOrdersDir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -94,11 +94,11 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(42, 74);
+            this.label2.Location = new System.Drawing.Point(25, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
+            this.label2.Size = new System.Drawing.Size(117, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "App Root Path";
+            this.label2.Text = "Local Data Directory";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
@@ -191,12 +191,12 @@
             // 
             this.ofdQBFile.Filter = "QuickBooks File (*.qbw)|*.qbw";
             // 
-            // txtPendingOrdersDir
+            // txtServerRootDirectory
             // 
-            this.txtPendingOrdersDir.Location = new System.Drawing.Point(148, 45);
-            this.txtPendingOrdersDir.Name = "txtPendingOrdersDir";
-            this.txtPendingOrdersDir.Size = new System.Drawing.Size(253, 20);
-            this.txtPendingOrdersDir.TabIndex = 1;
+            this.txtServerRootDirectory.Location = new System.Drawing.Point(148, 45);
+            this.txtServerRootDirectory.Name = "txtServerRootDirectory";
+            this.txtServerRootDirectory.Size = new System.Drawing.Size(253, 20);
+            this.txtServerRootDirectory.TabIndex = 1;
             // 
             // label6
             // 
@@ -204,12 +204,12 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 15);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Pending Orders Directory";
+            this.label6.Text = "Server Root Directory";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnPendingOrdersDir
             // 
-            this.btnPendingOrdersDir.Location = new System.Drawing.Point(413, 45);
+            this.btnPendingOrdersDir.Location = new System.Drawing.Point(413, 43);
             this.btnPendingOrdersDir.Name = "btnPendingOrdersDir";
             this.btnPendingOrdersDir.Size = new System.Drawing.Size(24, 23);
             this.btnPendingOrdersDir.TabIndex = 8;
@@ -327,7 +327,7 @@
             this.groupBox2.Controls.Add(this.txtMaxLogSize);
             this.groupBox2.Controls.Add(this.txtPrivateFieldsID);
             this.groupBox2.Controls.Add(this.txtAppRootPath);
-            this.groupBox2.Controls.Add(this.txtPendingOrdersDir);
+            this.groupBox2.Controls.Add(this.txtServerRootDirectory);
             this.groupBox2.Controls.Add(this.txtQBAppName);
             this.groupBox2.Controls.Add(this.txtQBFilePath);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
@@ -378,7 +378,7 @@
         private System.Windows.Forms.Button btnBrowseQBFile;
         private System.Windows.Forms.Button btnBrowseAppRoot;
         private System.Windows.Forms.OpenFileDialog ofdQBFile;
-        private System.Windows.Forms.TextBox txtPendingOrdersDir;
+        private System.Windows.Forms.TextBox txtServerRootDirectory;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPendingOrdersDir;
         private System.Windows.Forms.GroupBox groupBox1;

@@ -32,7 +32,7 @@ namespace QuickBooks.UI
             txtMaxLogSize.Text = _s.MaxLogSizeBytes.ToString();
             txtQBFilePath.Text = _s.QuickBooksFilePath;
 
-            txtPendingOrdersDir.Text = _s.PendingOrdersPath;
+            txtServerRootDirectory.Text = _s.ServerDataRootDir;
             txtTaxableState.Text = _s.TaxableState;
             txtInStateTaxCode.Text = _s.InStateTaxCodeName;
             txtOutOfStateTaxCode.Text = _s.OutOfStateTaxCodeName;
@@ -53,7 +53,7 @@ namespace QuickBooks.UI
             _s.MaxLogSizeBytes = int.Parse(txtMaxLogSize.Text);
             _s.QbAppName = txtQBAppName.Text;
             _s.QuickBooksFilePath = txtQBFilePath.Text;
-            _s.PendingOrdersPath = txtPendingOrdersDir.Text;
+            _s.ServerDataRootDir = txtServerRootDirectory.Text;
             
             _s.TaxableState = txtTaxableState.Text;
             _s.TaxableRate = double.Parse(txtTaxableRate.Text)/100;
@@ -102,13 +102,13 @@ namespace QuickBooks.UI
         private void btnPendingOrdersDir_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            if (this.txtPendingOrdersDir.Text != "")
-                fbd.SelectedPath = txtPendingOrdersDir.Text;
+            if (this.txtServerRootDirectory.Text != "")
+                fbd.SelectedPath = txtServerRootDirectory.Text;
             var result = fbd.ShowDialog();
             if (result == DialogResult.Cancel)
                 return;
 
-            txtPendingOrdersDir.Text = fbd.SelectedPath;
+            txtServerRootDirectory.Text = fbd.SelectedPath;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

@@ -15,8 +15,10 @@ namespace QuickBooks.Util
         string LogFilePath { get; }
         int MaxLogSizeBytes { get; set; }
         void NotifyIfChangesMades();
+        string SalesItemsPath { get; }
         string OutOfStateTaxCodeName { get; set; }
-        string PendingOrdersPath { get; set; }
+        string ServerDataRootDir { get; set; }
+        string PendingOrdersPath { get;}
         string QbAppName { get; set; }
         string QuickBooksFilePath { get; set; }
         void Save(string path);

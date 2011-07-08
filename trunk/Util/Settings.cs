@@ -139,11 +139,10 @@ namespace QuickBooks.Util
             get { return AppDataDirectory + "\\app.cfg"; }
         }
 
-        string _pendingOrdersPath;
+        [IncludeAttribute(false)]
         public string PendingOrdersPath
         {
-            get { return _pendingOrdersPath; }
-            set { _pendingOrdersPath = value; }
+            get { return _serverDataRootDir + "\\Pending Orders"; }
         }
 
         string _customerPrivateFieldsID;
@@ -212,8 +211,8 @@ namespace QuickBooks.Util
             if(_appRootPath == "")
                 _appRootPath = Environment.CurrentDirectory;
             
-            if (_pendingOrdersPath == "")
-                _pendingOrdersPath = _appRootPath + "\\PendingOrders";
+            //if (_pendingOrdersPath == "")
+            //    _pendingOrdersPath = _appRootPath + "\\PendingOrders";
 
             _changesMade = false;
         }
@@ -269,5 +268,27 @@ namespace QuickBooks.Util
 
 
         public bool IsConnected { get; set; }
+
+        [Include(false)]
+        public string SalesItemsPath
+        {
+            get 
+            { 
+                return _serverDataRootDir + "\\QBSalesItems\\SalesItems.xml"; 
+            }
+        }
+
+        private string _serverDataRootDir;
+        public string ServerDataRootDir
+        {
+            get
+            {
+                return _serverDataRootDir;
+            }
+            set
+            {
+                _serverDataRootDir = value;
+            }
+        }
     }
 }

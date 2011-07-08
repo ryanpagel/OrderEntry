@@ -17,7 +17,7 @@ namespace QuickBooks.Util
         {
             _settings = settings;
 
-            _xDocSettings = XDocument.Load(_settings.ConfigFilePath);
+            _xDocSettings = XDocument.Load(_settings.SalesItemsPath);
 
         }
 
@@ -61,12 +61,13 @@ namespace QuickBooks.Util
                                 
             }
 
+            //remove any existing SalesItems node
             if (_xDocSettings.Root.Element("SalesItems") != null)
                 _xDocSettings.Root.Element("SalesItems").Remove();
 
             _xDocSettings.Root.Add(xItems);
 
-            _xDocSettings.Save(_settings.ConfigFilePath);
+            _xDocSettings.Save(_settings.SalesItemsPath);
         }
     }
 }

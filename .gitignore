@@ -25,6 +25,8 @@
 bin/
 obj/
 PendingOrders/
+Pending Orders/
+QBSalesItems/
 
 # Other #
 #########

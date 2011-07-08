@@ -37,6 +37,7 @@
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToRightPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSaveAsSwatchOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuSaveToQuickBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtOrderDate = new System.Windows.Forms.DateTimePicker();
@@ -102,7 +103,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.mnuSaveAsSwatchOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpCust.SuspendLayout();
@@ -175,6 +175,12 @@
             this.saveToRightPanelToolStripMenuItem.Name = "saveToRightPanelToolStripMenuItem";
             resources.ApplyResources(this.saveToRightPanelToolStripMenuItem, "saveToRightPanelToolStripMenuItem");
             this.saveToRightPanelToolStripMenuItem.Click += new System.EventHandler(this.saveToRightPanelToolStripMenuItem_Click);
+            // 
+            // mnuSaveAsSwatchOrder
+            // 
+            this.mnuSaveAsSwatchOrder.Name = "mnuSaveAsSwatchOrder";
+            resources.ApplyResources(this.mnuSaveAsSwatchOrder, "mnuSaveAsSwatchOrder");
+            this.mnuSaveAsSwatchOrder.Click += new System.EventHandler(this.mnuSaveAsSwatchOrder_Click);
             // 
             // toolStripSeparator1
             // 
@@ -587,12 +593,6 @@
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
-            // 
-            // mnuSaveAsSwatchOrder
-            // 
-            this.mnuSaveAsSwatchOrder.Name = "mnuSaveAsSwatchOrder";
-            resources.ApplyResources(this.mnuSaveAsSwatchOrder, "mnuSaveAsSwatchOrder");
-            this.mnuSaveAsSwatchOrder.Click += new System.EventHandler(this.mnuSaveAsSwatchOrder_Click);
             // 
             // frmOrder
             // 

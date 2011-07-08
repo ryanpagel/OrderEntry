@@ -122,7 +122,7 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="mnuPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="mnuPrint.Text" xml:space="preserve">
     <value>Print</value>
@@ -132,13 +132,13 @@
     <value>False</value>
   </data>
   <data name="mnuDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="mnuDelete.Text" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="mnuCloseOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="mnuCloseOrder.Text" xml:space="preserve">
     <value>Close</value>
@@ -238,7 +238,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 208</value>
+    <value>318, 181</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
@@ -265,10 +265,10 @@
     <value>0</value>
   </data>
   <data name="txtNotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 205</value>
+    <value>359, 177</value>
   </data>
   <data name="txtNotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 20</value>
+    <value>435, 20</value>
   </data>
   <data name="txtNotes.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -850,7 +850,7 @@
     <value>568, 48</value>
   </data>
   <data name="ucShippingAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 134</value>
+    <value>232, 123</value>
   </data>
   <data name="ucShippingAddress.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -946,7 +946,7 @@
     <value>304, 48</value>
   </data>
   <data name="ucBillingAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 134</value>
+    <value>230, 123</value>
   </data>
   <data name="ucBillingAddress.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1896,6 +1896,12 @@
   <data name="&gt;&gt;saveToRightPanelToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;mnuSaveAsSwatchOrder.Name" xml:space="preserve">
+    <value>mnuSaveAsSwatchOrder</value>
+  </data>
+  <data name="&gt;&gt;mnuSaveAsSwatchOrder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
@@ -1919,12 +1925,6 @@
   </data>
   <data name="&gt;&gt;printDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PrintDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mnuSaveAsSwatchOrder.Name" xml:space="preserve">
-    <value>mnuSaveAsSwatchOrder</value>
-  </data>
-  <data name="&gt;&gt;mnuSaveAsSwatchOrder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmOrder</value>

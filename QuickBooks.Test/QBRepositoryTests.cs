@@ -109,7 +109,7 @@ namespace QuickBooks.Test
             s.TaxableRate = .08375;
             s.TaxableState = "OK";
             s.OutOfStateTaxCodeName = "Out of State";
-            s.PendingOrdersPath = @"C:\Repositories\QuickBooks\trunk\bin\Debug\PendingOrders";
+            //s.PendingOrdersPath = @"C:\Repositories\QuickBooks\trunk\bin\Debug\PendingOrders";
             s.IsInitialStartup = false;
             s.QbAppName = "CFIApplication";
             s.QuickBooksFilePath = @"C:\Shared\LeatherSeats.com\Customized Factory Interiors3.qbw";

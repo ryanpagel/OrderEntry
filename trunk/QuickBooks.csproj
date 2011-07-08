@@ -115,6 +115,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="QBSalesItems\SalesItems.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README.txt" />
+    <Content Include="Resources\QBSalesItems\SalesItems.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="UI\frmCustomerSearch.resx">
       <DependentUpon>frmCustomerSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,14 +168,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\logo.png" />
-    <Content Include="PendingOrders\TextFile1.txt">
+    <Content Include="Pending Orders\TextFile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="ThridParty\EncryptionClassLibrary.dll" />
     <None Include="ThridParty\StructureMap.dll" />
-    <Content Include="AppData\Standard.inv2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Compile Include="UI\frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>

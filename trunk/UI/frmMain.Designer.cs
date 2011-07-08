@@ -52,8 +52,8 @@
             this.cmsGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucSwatches = new QuickBooks.UI.ucGrid();
             this.ucGridPendingOrders = new QuickBooks.UI.ucGrid();
+            this.ucSwatches = new QuickBooks.UI.ucGrid();
             this.ucGridContacts = new QuickBooks.UI.ucGrid();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -109,8 +109,8 @@
             this.showSettingsToolStripMenuItem,
             this.toolStripSeparator1,
             this.mnuContactsPanel,
-            this.mnuPendingOrdersPanel,
-            this.mnuSwatchesPanel});
+            this.mnuSwatchesPanel,
+            this.mnuPendingOrdersPanel});
             this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
             this.otherToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.otherToolStripMenuItem.Text = "View";
@@ -258,8 +258,8 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Controls.Add(this.ucSwatches);
             this.flowLayoutPanel1.Controls.Add(this.ucGridPendingOrders);
+            this.flowLayoutPanel1.Controls.Add(this.ucSwatches);
             this.flowLayoutPanel1.Controls.Add(this.ucGridContacts);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
@@ -269,23 +269,23 @@
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.WrapContents = false;
             // 
-            // ucSwatches
-            // 
-            this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ucSwatches.Location = new System.Drawing.Point(515, 3);
-            this.ucSwatches.Name = "ucSwatches";
-            this.ucSwatches.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
-            this.ucSwatches.Size = new System.Drawing.Size(250, 821);
-            this.ucSwatches.TabIndex = 0;
-            // 
             // ucGridPendingOrders
             // 
             this.ucGridPendingOrders.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ucGridPendingOrders.Location = new System.Drawing.Point(259, 3);
+            this.ucGridPendingOrders.Location = new System.Drawing.Point(515, 3);
             this.ucGridPendingOrders.Name = "ucGridPendingOrders";
             this.ucGridPendingOrders.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.RightPanel;
             this.ucGridPendingOrders.Size = new System.Drawing.Size(250, 821);
             this.ucGridPendingOrders.TabIndex = 4;
+            // 
+            // ucSwatches
+            // 
+            this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucSwatches.Location = new System.Drawing.Point(259, 3);
+            this.ucSwatches.Name = "ucSwatches";
+            this.ucSwatches.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
+            this.ucSwatches.Size = new System.Drawing.Size(250, 821);
+            this.ucSwatches.TabIndex = 0;
             // 
             // ucGridContacts
             // 
