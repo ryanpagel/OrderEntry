@@ -39,8 +39,8 @@
             this.showSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuContactsPanel = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPendingOrdersPanel = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSwatchesPanel = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPendingOrdersPanel = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryItemListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRefreshContactsAndPendingOrders = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,15 +155,6 @@
             this.mnuContactsPanel.Text = "Contacts Panel";
             this.mnuContactsPanel.Click += new System.EventHandler(this.mnuContactsPanel_Click);
             // 
-            // mnuPendingOrdersPanel
-            // 
-            this.mnuPendingOrdersPanel.Checked = true;
-            this.mnuPendingOrdersPanel.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mnuPendingOrdersPanel.Name = "mnuPendingOrdersPanel";
-            this.mnuPendingOrdersPanel.Size = new System.Drawing.Size(211, 22);
-            this.mnuPendingOrdersPanel.Text = "Pending Orders Panel";
-            this.mnuPendingOrdersPanel.Click += new System.EventHandler(this.mnuRightPanel_Click);
-            // 
             // mnuSwatchesPanel
             // 
             this.mnuSwatchesPanel.Checked = true;
@@ -172,6 +163,15 @@
             this.mnuSwatchesPanel.Size = new System.Drawing.Size(211, 22);
             this.mnuSwatchesPanel.Text = "Swatches Panel";
             this.mnuSwatchesPanel.Click += new System.EventHandler(this.mnuSwatchesPanel_Click);
+            // 
+            // mnuPendingOrdersPanel
+            // 
+            this.mnuPendingOrdersPanel.Checked = true;
+            this.mnuPendingOrdersPanel.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnuPendingOrdersPanel.Name = "mnuPendingOrdersPanel";
+            this.mnuPendingOrdersPanel.Size = new System.Drawing.Size(211, 22);
+            this.mnuPendingOrdersPanel.Text = "Pending Orders Panel";
+            this.mnuPendingOrdersPanel.Click += new System.EventHandler(this.mnuRightPanel_Click);
             // 
             // refreshToolStripMenuItem
             // 
@@ -271,29 +271,32 @@
             // 
             // ucGridPendingOrders
             // 
-            this.ucGridPendingOrders.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucGridPendingOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ucGridPendingOrders.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ucGridPendingOrders.Location = new System.Drawing.Point(515, 3);
             this.ucGridPendingOrders.Name = "ucGridPendingOrders";
             this.ucGridPendingOrders.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.RightPanel;
-            this.ucGridPendingOrders.Size = new System.Drawing.Size(250, 821);
+            this.ucGridPendingOrders.Size = new System.Drawing.Size(250, 827);
             this.ucGridPendingOrders.TabIndex = 4;
             // 
             // ucSwatches
             // 
-            this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucSwatches.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ucSwatches.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ucSwatches.Location = new System.Drawing.Point(259, 3);
             this.ucSwatches.Name = "ucSwatches";
             this.ucSwatches.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.Swatch;
-            this.ucSwatches.Size = new System.Drawing.Size(250, 821);
+            this.ucSwatches.Size = new System.Drawing.Size(250, 827);
             this.ucSwatches.TabIndex = 0;
             // 
             // ucGridContacts
             // 
-            this.ucGridContacts.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ucGridContacts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ucGridContacts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ucGridContacts.Location = new System.Drawing.Point(3, 3);
             this.ucGridContacts.Name = "ucGridContacts";
             this.ucGridContacts.SaveLocation = QuickBooks.DataAccess.PendingOrderSaveLocation.LeftPanel;
-            this.ucGridContacts.Size = new System.Drawing.Size(250, 821);
+            this.ucGridContacts.Size = new System.Drawing.Size(250, 827);
             this.ucGridContacts.TabIndex = 4;
             // 
             // frmMain
@@ -312,6 +315,7 @@
             this.Text = "CFI Order Entry";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Shown += new System.EventHandler(this.frmMain_Shown);
+            this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();

@@ -511,6 +511,15 @@ namespace QuickBooks.UI
             }
         }
 
+        private void frmMain_Resize(object sender, EventArgs e)
+        {
+            int newHeight = this.Height - 85;
+            ucGridContacts.Height = newHeight;
+            ucGridPendingOrders.Height = newHeight;
+            ucSwatches.Height = newHeight;
+            
+        }
+
 
 
 
