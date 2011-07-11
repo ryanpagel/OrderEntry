@@ -204,7 +204,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 15);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Server Root Directory";
+            this.label6.Text = "Server Data Directory";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnPendingOrdersDir
