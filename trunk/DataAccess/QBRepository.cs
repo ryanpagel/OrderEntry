@@ -13,7 +13,7 @@ namespace QuickBooks.DataAccess
 {
     public class QBRepository : QuickBooks.DataAccess.IQBRepository
     {
-        IQBSessionManager _qbSession = new QBSessionManagerClass();
+        IQBSessionManager _qbSession;
 
         ILogger _logger;
         ISettings _settings;
@@ -22,6 +22,17 @@ namespace QuickBooks.DataAccess
         {
             _logger = logger;
             _settings = settings;
+
+            try
+            {
+                _qbSession = new QBSessionManagerClass();
+
+            }
+            catch (Exception e)
+            {
+               
+                _logger.LogException("Error creating QBSessionManagerClass object in QBRepository constructor.", e);
+            }
         }
 
         public bool HasValidConnection()

@@ -251,6 +251,9 @@ namespace QuickBooks.DataAccess
             double taxes;
             DateTime orderDate;
 
+            if (xOrder.Attribute("Notes") != null)
+                o.Notes = xOrder.Attribute("Notes").Value;
+
             if (double.TryParse(xOrder.Attribute("GrandTotal").Value, out grandTotal))
                 o.GrandTotal = grandTotal;
 
@@ -417,7 +420,8 @@ namespace QuickBooks.DataAccess
                 new XAttribute("OrderDate", o.OrderDate.ToShortDateString()),
                 new XAttribute("PaymentMethod", o.PaymentMethod.ToString()),
                 new XAttribute("SubTotal", o.SubTotal.ToString()),
-                new XAttribute("Taxes", o.Taxes)
+                new XAttribute("Taxes", o.Taxes),
+                new XAttribute("Notes", o.Notes)
                 );
 
             foreach (var lineItem in o.OrderItems)

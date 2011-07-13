@@ -43,6 +43,8 @@ namespace QuickBooks.BusObj
             set { _grandTotal = value; }
         }
 
+        public string Notes { get; set; }
+
 
         Enums.PaymentMethod _paymentMethod;
 

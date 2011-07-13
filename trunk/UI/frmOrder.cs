@@ -69,6 +69,8 @@ namespace QuickBooks.UI
         {
             _saveLocation = coo.SaveLocation;
             _fileKey = coo.FileKey;
+
+            txtNotes.Text = coo.Order.Notes;
             dtOrderDate.Value = coo.Order.OrderDate;
             ucCustomerInfo1.SetCustomerInfo(coo.Customer);
             ucBillingAddress.SetAddress(coo.Customer.BillingAddress);
@@ -117,6 +119,9 @@ namespace QuickBooks.UI
 
         void SetOrderDetails(Order o)
         {
+
+            txtNotes.Text = o.Notes;
+
             foreach (var lineItem in o.OrderItems)
             {
                 var ucLi = ObjectFactory.GetInstance<ucLineItem>();
@@ -319,6 +324,7 @@ namespace QuickBooks.UI
             Customer c = coo.Customer;
             Vehicle v = coo.Vehicle;
             Order o = coo.Order;
+            o.Notes = txtNotes.Text;
 
             c.LoadPersonalInfo(ucCustomerInfo1.GetCustomer());
 

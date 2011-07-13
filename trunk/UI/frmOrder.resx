@@ -155,17 +155,17 @@
   <data name="saveToolStripMenuItem.Text" xml:space="preserve">
     <value>As Contact</value>
   </data>
-  <data name="saveToRightPanelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
-  </data>
-  <data name="saveToRightPanelToolStripMenuItem.Text" xml:space="preserve">
-    <value>As Pending Order</value>
-  </data>
   <data name="mnuSaveAsSwatchOrder.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 22</value>
   </data>
   <data name="mnuSaveAsSwatchOrder.Text" xml:space="preserve">
     <value>As Swatch Order</value>
+  </data>
+  <data name="saveToRightPanelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="saveToRightPanelToolStripMenuItem.Text" xml:space="preserve">
+    <value>As Pending Order</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 6</value>
@@ -1844,6 +1844,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>857, 541</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>892, 617</value>

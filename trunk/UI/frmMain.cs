@@ -529,6 +529,11 @@ namespace QuickBooks.UI
             
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Version 1.2.0", "CFI Order Entry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
 
 
 
